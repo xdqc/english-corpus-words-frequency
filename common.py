@@ -5,7 +5,7 @@ with open('./dictionary/dict_all.txt', 'r') as f:
   for w in f:
     dict_alpha.add(w.strip())
 
-with open('./1gramsbyfreq', 'r') as f:
+with open('./corpus_original/coca_corpus.txt', 'r') as f:
   for w in f:
     w = w.split('\t')[0]
     words.append(w.strip())
