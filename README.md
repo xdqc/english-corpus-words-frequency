@@ -61,7 +61,7 @@ one of the results using *all-dictionary mask* and *10000 compare size*.
 
 ### Common words comparison
 
-Words with distance > 2 common in both corpus (unfiltered, 20000 size), each ordered by absolute distance:
+List words with |*distance*| > `2` common in both corpus (unfiltered, 20000 size), each ordered by |*distance*|:
 
 |          | **coca**  | **norv**  | **twit**  |**wiki**| **goog**  | **subt**  |
 | ---------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
