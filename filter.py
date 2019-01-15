@@ -2,12 +2,12 @@ import os
 
 dict_alpha = set()
 
-with open('./dictionary/dict_oxford.txt', 'r') as f:
+with open('./dictionary/dict_webster.txt', 'r') as f:
   for w in f:
     dict_alpha.add(w.strip())
 
 corpus_dir = './corpus_f_n/'
-output_dir = './corpus_f_oxford/'
+output_dir = './corpus_f_webster/'
 
 files = os.listdir(corpus_dir)
 
