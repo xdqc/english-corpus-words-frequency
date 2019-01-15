@@ -25,11 +25,38 @@ Compare various English corpus by measuring differences between words frequency 
 
 - [English words](https://github.com/dwyl/english-words) `dict_alpha.txt`
 
-    - `dict_oxford_only` = `dict_oxford` - (`dict_alpha` + `dict_webster`)
 
-    - `dict_webster_only` = `dict_webster` - (`dict_alpha` + `dict_oxford`)
+## How to compare corpus?
 
-    - `dict_modern` = (`dict_alpha` + `dict_oxford` + `dict_webster`) - `google_20000`
+#### Similarity
 
-    - `dict_all` = `dict_alpha` + `dict_oxford` + `dict_webster` + `dict_modern`
+**Similarity** of two corpus is depend on *percentage of common words* and *average word distance* in two corpus.
 
+#### Word distance
+
+**Distance** means how far away a word position of the frequency ranking in different corpus. Distance has sign (can be negative).
+
+*distance* = *ln(indexofWordInSecondCorpus)* - *ln(indexofWordInFirstCorpus)*
+
+
+#### Compare size
+
+For fairness, two corpus should be compared with same size of N most common words. Typically, first 10000 common words covers 97% of entire corpus, first 20000 common words convers more than 99% of entire corpus.
+
+#### Dictionary filter
+
+Use dictionaries as masks to mitigate criteriary differences when generating these corpus.
+
+
+## Comparison
+
+### Results
+
+one of the results using *all-dictionary mask* and *10000 compare size*.
+![alt text](https://raw.githubusercontent.com/xdqc/english-corpus-words-frequency/master/results/t-all-10000.PNG "dictinary mask=dict_all, compare size=10000")
+
+![alt text](https://raw.githubusercontent.com/xdqc/english-corpus-words-frequency/master/results/g-all-10000.PNG "dictinary mask=dict_all, compare size=10000")
+
+`norv` and `ngra` have 99.9% words in common, and 100x similarity value to other corpus, thuns can be considered the same.
+
+#### 
