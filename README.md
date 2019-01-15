@@ -30,7 +30,7 @@ Compare various English corpus by measuring differences between words frequency 
 
 #### Similarity
 
-**Similarity** of two corpus is depend on *percentage of common words* and *average word distance* in two corpus.
+**Similarity** of two corpus depends on *percentage of common words* and *average word distance* in two corpus.
 
 #### Word distance
 
@@ -41,7 +41,7 @@ Compare various English corpus by measuring differences between words frequency 
 
 #### Compare size
 
-For fairness, two corpus should be compared with same size of N most common words. Typically, first 10000 common words covers 97% of entire corpus, first 20000 common words convers more than 99% of entire corpus.
+Two corpus are compared by same size of N most common words. Typically, most 10000 common words cover 97% of entire corpus; most 20000 common words conver more than 99% of entire corpus.
 
 #### Dictionary filter
 
