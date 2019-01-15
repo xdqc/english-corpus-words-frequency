@@ -23,6 +23,7 @@ def compare_corpus(first_corpus, second_corpus, writer):
 
     num_commons = 0
     total_distance = 0
+    total_words = math.ceil((len(up_words) + len(down_words)) / 2)
     ln_up = math.log(len(up_words))
     ln_down = math.log(len(down_words))
 
@@ -44,11 +45,12 @@ def compare_corpus(first_corpus, second_corpus, writer):
 
     df = DataFrame({
         'title': df_name,
-        'total': compare_size,
+        'total': total_words,
         'commons': num_commons,
+        'common_pct': num_commons/total_words,
         'dist_sum': total_distance,
         'dist_avg': total_distance/num_commons,
-        'similarity': num_commons*num_commons/compare_size/total_distance
+        'similarity': num_commons*num_commons/total_words/total_distance
     }, index=[0])
 
     df2 = DataFrame(diff, columns=['Word', 'Distance'])
@@ -59,8 +61,8 @@ def compare_corpus(first_corpus, second_corpus, writer):
     return df
 
 
-compare_size = 20000
-corpus_dir = './corpus_f_all/'
+compare_size = 10000
+corpus_dir = './corpus_f_oxford/'
 
 files = os.listdir(corpus_dir)
 

@@ -1,15 +1,25 @@
-dict_alpha = set()
-words = []
+import os
 
-with open('./dictionary/dict_all.txt', 'r') as f:
+dict_alpha = set()
+
+with open('./dictionary/dict_oxford.txt', 'r') as f:
   for w in f:
     dict_alpha.add(w.strip())
 
-with open('./corpus_original/coca_corpus.txt', 'r') as f:
-  for w in f:
-    w = w.split('\t')[0]
-    words.append(w.strip())
+corpus_dir = './corpus_f_n/'
+output_dir = './corpus_f_oxford/'
 
-for w in words:
-  if w in dict_alpha:
-    print(w)
+files = os.listdir(corpus_dir)
+
+for filename in files:
+  words = []
+  with open(corpus_dir+filename, 'r') as f:
+    for w in f:
+      w = w.strip()
+      if w in dict_alpha:
+        words.append(w)
+
+  with open(output_dir+filename, 'w') as f:
+    for w in words:
+      f.write(w+'\n')
+
