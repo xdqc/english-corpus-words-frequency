@@ -61,10 +61,72 @@ one of the results using *all-dictionary mask* and *10000 compare size*.
 
 ### Common words comparison
 
-Words with largest distances in each corpus (unfiltered, 20000 size), each ordered by absolute distance:
+Words with distance > 2 common in both corpus (unfiltered, 20000 size), each ordered by absolute distance:
+
+|          | **coca**  | **norv**  | **twit**  |**wiki**| **goog**  | **subt**  |
+| ---------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| **coca** |               |[#](#coca-norv)|[#](#coca-twit)|[#](#coca-wiki)|[#](#coca-goog)|[#](#coca-subt)|
+| **norv** |[#](#coca-norv)|               |[#](#norv-twit)|[#](#norv-wiki)|[#](#norv-goog)|[#](#norv-subt)|
+| **twit** |[#](#coca-twit)|[#](#norv-twit)|               |[#](#twit-wiki)|[#](#twit-goog)|[#](#twit-subt)|
+| **wiki** |[#](#coca-wiki)|[#](#norv-wiki)|[#](#twit-wiki)|               |[#](#wiki-goog)|[#](#wiki-subt)|
+| **goog** |[#](#coca-goog)|[#](#norv-goog)|[#](#twit-goog)|[#](#wiki-goog)|               |[#](#goog-subt)|
+| **subt** |[#](#coca-subt)|[#](#norv-subt)|[#](#twit-subt)|[#](#wiki-subt)|[#](#goog-subt)|               |
+
+
 
 ----
-#### twit vs coca
+#### coca-twit
+
+>percent
+toward
+began
+iraq
+soviet
+seemed
+iraqi
+bush
+programs
+environmental
+ca
+correspondent
+studies
+wo
+although
+moreover
+nodded
+thus
+among
+characteristics
+relatively
+indicated
+participants
+television
+particularly
+factors
+mixture
+differences
+considerable
+washington
+conventional
+gore
+hussein
+mr
+subjects
+however
+several
+literature
+telephone
+recalls
+instance
+nevertheless
+significant
+economic
+kuwait
+larry
+perceptions
+cultural
+eight
+larger
 
 >trump
 u
@@ -124,60 +186,9 @@ update
 awesome
 nude
 
->percent
-toward
-began
-iraq
-soviet
-seemed
-iraqi
-bush
-programs
-environmental
-ca
-correspondent
-studies
-wo
-although
-moreover
-nodded
-thus
-among
-characteristics
-relatively
-indicated
-participants
-television
-particularly
-factors
-mixture
-differences
-considerable
-washington
-conventional
-gore
-hussein
-mr
-subjects
-however
-several
-literature
-telephone
-recalls
-instance
-nevertheless
-significant
-economic
-kuwait
-larry
-perceptions
-cultural
-eight
-larger
-
 
 ----
-#### coca vs norv
+#### coca-norv
 
 >wo
 unidentified
@@ -293,7 +304,38 @@ bibliography
 
 
 ----
-#### norv vs wiki
+#### coca-wiki
+
+>
+
+>
+
+
+----
+#### coca-goog
+
+>
+
+>
+
+
+----
+#### coca-subt
+
+>
+
+>
+
+----
+#### norv-twit
+
+>
+
+>
+
+
+----
+#### norv-wiki
 
 >fig
 shall
@@ -399,7 +441,149 @@ soccer
 
 
 ----
-#### wiki vs goog
+#### norv-goog
+
+>
+
+>
+
+
+----
+#### norv-subt
+
+>
+
+>
+
+
+----
+#### twit-wiki
+
+>
+
+>
+
+
+----
+#### twit-goog
+
+>
+
+>
+
+
+----
+#### twit-subt
+
+>lol
+trump
+im
+ive
+youre
+dont
+hes
+cant
+twitter
+ur
+tweet
+didnt
+vs
+thats
+via
+theres
+u
+bc
+pic
+anti
+pre
+democrats
+ht
+followers
+app
+youtube
+w
+videos
+ft
+uk
+eu
+niggas
+wont
+whats
+streaming
+mueller
+haha
+liberals
+obama
+porn
+video
+teen
+republicans
+lil
+hardcore
+added
+update
+ny
+july
+trans
+bs
+fr
+etc
+cnn
+
+>didn
+isn
+doesn
+don
+haven
+sighs
+ain
+lieutenant
+uh
+colonel
+whoa
+sergeant
+narrator
+majesty
+madame
+ln
+ooh
+gentlemen
+l
+ringing
+mmm
+um
+detective
+huh
+madam
+lt
+upstairs
+laughs
+ow
+applause
+announcer
+darling
+hurry
+chatter
+lf
+you
+mister
+bastard
+inspector
+sir
+yeah
+hmm
+downstairs
+clears
+siren
+annie
+telephone
+marty
+uncle
+coughing
+
+
+----
+#### wiki-goog
 
 >became
 won
@@ -505,7 +689,15 @@ online
 
 
 ----
-#### goog vs subt
+#### wiki-subt
+
+>
+
+>
+
+
+----
+#### goog-subt
 
 >copyright
 ebay
@@ -609,117 +801,5 @@ ow
 shouting
 wait
 kill
-
-
-----
-#### subt vs twit
-
->didn
-isn
-doesn
-don
-haven
-sighs
-ain
-lieutenant
-uh
-colonel
-whoa
-sergeant
-narrator
-majesty
-madame
-ln
-ooh
-gentlemen
-l
-ringing
-mmm
-um
-detective
-huh
-madam
-lt
-upstairs
-laughs
-ow
-applause
-announcer
-darling
-hurry
-chatter
-lf
-you
-mister
-bastard
-inspector
-sir
-yeah
-hmm
-downstairs
-clears
-siren
-annie
-telephone
-marty
-uncle
-coughing
-
-
->lol
-trump
-im
-ive
-youre
-dont
-hes
-cant
-twitter
-ur
-tweet
-didnt
-vs
-thats
-via
-theres
-u
-bc
-pic
-anti
-pre
-democrats
-ht
-followers
-app
-youtube
-w
-videos
-ft
-uk
-eu
-niggas
-wont
-whats
-streaming
-mueller
-haha
-liberals
-obama
-porn
-video
-teen
-republicans
-lil
-hardcore
-added
-update
-ny
-july
-trans
-bs
-fr
-etc
-cnn
-
 
 
