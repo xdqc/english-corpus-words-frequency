@@ -15,6 +15,22 @@ def make_order(filename, compare_size):
     return words
 
 
+def output_diff(diff:list, up_corpus, down_corpus):
+    print('\n\n----')
+    print('####', up_corpus.split('_')[1][:4] + '-' + down_corpus.split('_')[1][:4])
+    print()
+    down_words = []
+    for word in diff:
+        if 2 < word[1] < 9:
+            print('>'+word[0])
+        elif -9 < word[1] < -2:
+            down_words.insert(0, word)
+    print('\n')
+    for word in down_words:
+        print('>'+word[0])
+
+
+
 def compare_corpus(first_corpus, second_corpus, compare_size, corpus_dir, writer):
     down_words = make_order(corpus_dir+second_corpus, compare_size)
     up_words = make_order(corpus_dir+first_corpus, compare_size)
@@ -43,6 +59,8 @@ def compare_corpus(first_corpus, second_corpus, compare_size, corpus_dir, writer
 
     diff = sorted(diff.items(), key=lambda kv: kv[1], reverse=True)
 
+    output_diff(diff, first_corpus, second_corpus)
+
     df_name = first_corpus.split(
         '_')[1][:4] + '_' + second_corpus.split('_')[1][:4]
 
@@ -57,16 +75,16 @@ def compare_corpus(first_corpus, second_corpus, compare_size, corpus_dir, writer
         'similarity': num_commons/total_distance_sqr
     }, index=[0])
 
-    # df2 = DataFrame(diff, columns=['Word', 'Distance'])
-    # df2 = df.append(df2, ignore_index=True, sort=False)
-    # df2.to_excel(writer, sheet_name=df_name, index=False)
-    # writer.save()
+    df2 = DataFrame(diff, columns=['Word', 'Distance'])
+    df2 = df.append(df2, ignore_index=True, sort=False)
+    df2.to_excel(writer, sheet_name=df_name, index=False)
+    writer.save()
 
     return df
 
 
 def compare_batch(corpus_dir, compare_size, writer):
-    files = os.listdir(corpus_dir)
+    files = sorted(os.listdir(corpus_dir))
 
     df = DataFrame()
     for pair in itertools.combinations(files, 2):
