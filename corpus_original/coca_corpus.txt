@@ -18,6 +18,7 @@ this
 they
 be
 are
+not
 we
 his
 but
@@ -2977,7 +2978,6 @@ thompson
 muscle
 naturally
 fiber
-not
 tank
 daughters
 revolution
