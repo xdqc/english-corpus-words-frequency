@@ -65,10 +65,10 @@ List words with |*distance*| > `2` common in both corpus (unfiltered, 20000 size
 
 |          | **coca**  | **norv**  | **twit**  |**wiki**| **goog**  | **subt**  |
 | ---------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| **coca** |               |90'-ish[#](#coca-norv)|00'-ish[#](#coca-twit)|emot-ish[#](#coca-wiki)|tv-ish[#](#coca-goog)|polit-ish[#](#coca-subt)|
+| **coca** |               |90'-ish[#](#coca-norv)|00'-ish[#](#coca-twit)|utter-ish[#](#coca-wiki)|tv-ish[#](#coca-goog)|polit-ish[#](#coca-subt)|
 | **norv** |[#](#coca-norv)paper-ish|               |litera-ish[#](#norv-twit)|infer-ish[#](#norv-wiki)|ibid-ish[#](#norv-goog)|sci-ish[#](#norv-subt)|
 | **twit** |[#](#coca-twit)vulg-ish|[#](#norv-twit)play-ish|               |life-ish[#](#twit-wiki)|buzz-ish[#](#twit-goog)|news-ish[#](#twit-subt)|
-| **wiki** |[#](#coca-wiki)doc-ish|[#](#norv-wiki)sport-ish|[#](#twit-wiki)note-ish|               |story-ish[#](#wiki-goog)|fact-ish[#](#wiki-subt)|
+| **wiki** |[#](#coca-wiki)doc-ish|[#](#norv-wiki)event-ish|[#](#twit-wiki)note-ish|               |story-ish[#](#wiki-goog)|fact-ish[#](#wiki-subt)|
 | **goog** |[#](#coca-goog)web-ish|[#](#norv-goog)info-ish|[#](#twit-goog)site-ish|[#](#wiki-goog)sale-ish|               |file-ish[#](#goog-subt)|
 | **subt** |[#](#coca-subt)tell-ish|[#](#norv-subt)call-ish|[#](#twit-subt)drama-ish|[#](#wiki-subt)feel-ish|[#](#goog-subt)chat-ish|               |
 
