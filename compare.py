@@ -15,10 +15,9 @@ def make_order(filename, compare_size):
     return words
 
 
-def output_diff(diff: list, up_corpus, down_corpus):
+def output_diff(diff:list, up_corpus, down_corpus):
     print('\n\n----')
-    print('####', up_corpus.split('_')[
-          1][:4] + '-' + down_corpus.split('_')[1][:4])
+    print('####', up_corpus.split('_')[1][:4] + '-' + down_corpus.split('_')[1][:4])
     print()
     down_words = []
     for word in diff:
@@ -75,10 +74,10 @@ def compare_corpus(first_corpus, second_corpus, compare_size, corpus_dir, writer
         'similarity': num_commons/total_distance_sqr
     }, index=[0])
 
-    # df2 = DataFrame(diff, columns=['Word', 'Distance'])
-    # df2 = df.append(df2, ignore_index=True, sort=False)
-    # df2.to_excel(writer, sheet_name=df_name, index=False)
-    # writer.save()
+    df2 = DataFrame(diff, columns=['Word', 'Distance'])
+    df2 = df.append(df2, ignore_index=True, sort=False)
+    df2.to_excel(writer, sheet_name=df_name, index=False)
+    writer.save()
 
     return df
 
