@@ -4,12 +4,12 @@ import math
 corpus_dir = './corpus_f_n/'
 
 factors = [
-    7,
+    3,
+    8,
+    1,
+    1,
     10,
-    1,
-    1,
-    4,
-    1
+    4
 ]
 
 output = {}
@@ -22,7 +22,7 @@ for index, filename in enumerate(os.listdir(corpus_dir)):
                 output[w] += factors[index] / math.log(i)
             else:
                 output[w] = factors[index] / math.log(i)
-            if i > 200000:
+            if i > 1000000:
                 break
 
 output = sorted(output.items(), key=lambda kv: kv[1], reverse=True)
