@@ -12,14 +12,16 @@
     <input type="text" v-model="search" placeholder="search" @change="searchWord()">
     <ul>
       <li v-for="(word,i) in word_list" :key="i">
-        <a :href="'https://www.etymonline.com/word/'+word" target="_blank">
+        <a :href="'https://www.google.com/search?tbm=isch&tbs=itp:clipart&q='+word" target="_blank">
           <span :class="{ 'current-cursor': (cursor<c_offset ? cursor==i : i==c_offset)}">{{ word }}</span>
         </a>
         <div
           v-if="translation[word] && (cursor<c_offset ? cursor==i : i==c_offset)"
           class="translation"
         >
-          <table>
+          <p class="def-us">{{ translation[word]['us'] || ' ' }}</p>
+          <p class="def-zh">{{ translation[word]['zh'] || ' ' }}</p>
+          <!-- <table>
             <tr>
               <td>{{ translation[word]['zh'] || word }}</td>
               <td>{{ translation[word]['fr'] || word }}</td>
@@ -45,7 +47,7 @@
               <td>{{ translation[word]['de'] || word }}</td>
               <td>{{ translation[word]['ru'] || word }}</td>
             </tr>
-          </table>
+          </table> -->
         </div>
       </li>
     </ul>
@@ -98,7 +100,7 @@ export default {
           this.speakWord(this.cursor);
           break;
         case 32:
-          this.speakMsg.voice = speechSynthesis.getVoices()[32];
+          // this.speakMsg.voice = speechSynthesis.getVoices()[32];
           this.toggleAutoScroll();
           break;
         default:
@@ -109,8 +111,29 @@ export default {
   },
   methods: {
     speakWord(index) {
-      this.speakMsg.text = WL[index];
+      const word = WL[index]
+      this.speakMsg.text = word;
+      this.speakMsg.voice = speechSynthesis.getVoices()[0];
       speechSynthesis.speak(this.speakMsg);
+
+      setTimeout(()=> {
+        if (this.translation[word] && this.translation[word]['us']){
+          this.speakMsg.voice = speechSynthesis.getVoices()[32];
+          this.speakMsg.text = this.translation[word]['us'];
+          speechSynthesis.speak(this.speakMsg);
+        }
+      }, 200);
+
+
+      setTimeout(()=> {
+        if (this.translation[word] && this.translation[word]['zh']){
+          this.speakMsg.voice = speechSynthesis.getVoices()[25];
+          this.speakMsg.text = this.translation[word]['zh'];
+          console.log(this.speakMsg.text);
+          speechSynthesis.speak(this.speakMsg);
+        }
+      }, 1500);
+
     },
 
     toggleAutoScroll() {
@@ -123,16 +146,20 @@ export default {
     },
 
     loop() {
-      let timeout = 1000 + (WL[++this.cursor].length - 1) * 45;
-      if (this.cursor < 120 && this.cursor > 50) {
-        timeout += 30;
+      const word = WL[++this.cursor];
+      let timeout = 0;
+      if (this.translation[word]){
+        const sentance = word + '... ' + this.translation[word]['us'] + this.translation[word]['zh'];
+        timeout = 3000 + (sentance.length - 1) * 50 + this.translation[word]['zh'].length*100;
+      } else {
+        timeout = 1000 + (word.length - 1) * 50 ;
       }
       this.speakWord(this.cursor);
       this.autoScroll = setTimeout(this.loop, timeout);
     },
 
     searchWord() {
-      const findIdx = WL.findIndex(w => w===this.search);
+      const findIdx = WL.findIndex(w => w === this.search);
       this.cursor = findIdx >= 0 ? findIdx : this.cursor;
     }
   }
@@ -178,5 +205,15 @@ a {
   font-size: 150%;
   font-weight: 500;
   color: #42b983;
+}
+.def-us {
+  font-size: 100%;
+  width: 60%;
+  margin: 40px auto;
+}
+.def-zh {
+  font-size: 120%;
+  width: 60%;
+  margin: 20px auto;
 }
 </style>
