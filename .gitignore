@@ -1,2 +1,5 @@
 .vscode
 corpus_f*
+/translation
+/images
+*.txt
