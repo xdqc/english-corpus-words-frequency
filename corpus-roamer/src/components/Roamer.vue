@@ -13,6 +13,7 @@
     <div>
       <input type="number" v-model="cursor" :max="WL_size" min="-1" step="2">
       <button @click="toggleAutoScroll()">{{ autoScroll ? 'Stop' : 'Start' }}</button>
+      <button @click="speakPi(cursor)">{{ sayingPi ? 'Shut up' : 'Say pi' }}</button>
       <input type="text" v-model="search" placeholder="search" @change="searchWord()">
     </div>
     <ul>
@@ -22,10 +23,12 @@
             :href="'https://www.google.com/search?tbm=isch&tbs=itp:clipart&q='+word"
             target="_blank"
           >
-            <span :class="{ 'current-cursor': (cursor<c_offset ? cursor==i : i==c_offset)}"
-                 v-show="cursor>0">
+            <span
+              :class="{ 'current-cursor': (cursor<c_offset ? cursor==i : i==c_offset)}"
+              v-show="cursor>0"
+            >
               <span v-show="cursor>0" class="cursor">{{ cursor }}</span>
-              圆周率第{{(word-1)*4000+1}}至{{ (word) * 4000 }}位 （每8位->汉字）
+              π {{(word-1)*10000+1}} ~ {{ (word) * 10000 }} 10d->1word）
             </span>
           </a>
           <div v-if="(cursor<c_offset ? cursor==i : i==c_offset)">
@@ -131,9 +134,11 @@
             <div v-if="true" id="for-zhCN-pi-million-roaming">
               <table>
                 <tr>
-                  <td class="def-us">
-                    <span id="speech-tracker" class="trail"></span> 
-                    {{ word_dict[word]}}
+                  <td>
+                    <p id="speech-content" class="def-us">
+                      <span id="speech-tracker" class="trail"></span>
+                      {{ word_dict[word]}}
+                    </p>
                   </td>
                 </tr>
               </table>
@@ -163,6 +168,7 @@ export default {
       cursor: 0,
       speakMsg: new SpeechSynthesisUtterance(),
       autoScroll: null,
+      sayingPi: false,
       search: "",
 
       word_dict: WL,
@@ -190,6 +196,7 @@ export default {
     }
   },
   mounted() {
+    this.speakMsg = new SpeechSynthesisUtterance();
     this.speakMsg.voice = speechSynthesis.getVoices()[32];
 
     window.addEventListener("keypress", e => {
@@ -216,7 +223,7 @@ export default {
             // speechSynthesis.getVoices()[48], // US female
           ];
           this.en_female = [
-            // speechSynthesis.getVoices()[10], // Fiona
+            // speechSynthesis.getVoices()[10], // Fiona UK
             // speechSynthesis.getVoices()[28], // Moria IE
             // speechSynthesis.getVoices()[36], // Tessa ZA
             // speechSynthesis.getVoices()[39], // Veena IN
@@ -271,7 +278,7 @@ export default {
       // this.speakWord(this.cursor);
       // this.speakStemWords(this.cursor);
 
-      this.speakPiZh(this.cursor);
+      this.speakPi(this.cursor);
       this.autoScroll = setTimeout(this.loop, timeout);
     },
 
@@ -340,20 +347,20 @@ export default {
       }, 1500);
     },
 
-    speakPiZh(index) {
-      speechSynthesis.cancel();
-      document.getElementById('speech-tracker').classList.remove('move-shape');
+    speakPi(index) {
+      this.cursor = index;
+
+      document.getElementById("speech-content").classList.remove("move-shape");
       setTimeout(() => {
-        document.getElementById('speech-tracker').classList.add('move-shape');
-      }, 10);
+        document.getElementById("speech-content").classList.add("move-shape");
+      }, 100);
+
       this.speakMsg.text = this.word_dict[index];
-      console.log(this.speakMsg.text);
-      this.speakMsg.lang = 'zh-CN';
-      this.speakMsg.voice = speechSynthesis.getVoices()[50];
+      this.speakMsg.voice = speechSynthesis.getVoices()[10];
       speechSynthesis.speak(this.speakMsg);
-      this.speakMsg.onend = (e) => {
-        console.log('end',e);
-      }
+      this.speakMsg.onend = () => {
+        this.speakPi(+index + 1);
+      };
     },
 
     searchWord() {
@@ -408,9 +415,11 @@ table {
 td {
   min-width: 7em;
   max-width: 12em;
-  max-width: 320px;
+  max-width: 400px;
   height: 1.2em;
   width: 50%;
+  overflow: hidden;
+  padding-bottom: 500px;
 }
 a {
   color: #2c3e5088;
@@ -484,25 +493,25 @@ div.footer {
 /* animation show reading progress */
 #speech-tracker {
   position: absolute;
-  left: 75%;
+  left: 85%;
   background-color: slategrey;
   width: 40px;
   height: 10px;
   display: block;
-	top: -150px;
+  top: -150px;
 }
-#speech-tracker.move-shape {
-  animation: ani 105s 1 linear;
+.move-shape {
+  position: relative;
+  animation: ani 255s 1 linear;
 }
 
 @keyframes ani {
   0% {
-    top: 145px;
+    top: 45px;
   }
 
   100% {
-    top: 870px;
+    top: -2800px;
   }
 }
-
 </style>
