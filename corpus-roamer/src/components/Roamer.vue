@@ -1,8 +1,8 @@
 <template>
   <div class="hello" onblur="window.focus();">
-    <!-- <div style="position: absolute; left: 50%; width:100%; height:150%;">
+    <div style="position: absolute; left: 50%; width:100%; height:150%;">
       <iframe :src="iframe_src" class="word-image" frameborder="0" allowtransparency="true"></iframe>
-    </div>-->
+    </div>
     <!-- <h3>{{msg}}</h3> -->
     <!-- <p>
       Press
@@ -11,9 +11,9 @@
       <code>SPACE</code> to toggle auto scroll.
     </p>-->
     <div>
-      <input type="number" v-model="cursor" :max="WL_size" min="-1" step="2">
+      <input type="number" v-model="cursor" :max="WL_size" min="-1" step="1">
       <button @click="toggleAutoScroll()">{{ autoScroll ? 'Stop' : 'Start' }}</button>
-      <button @click="speakPi(cursor)">{{ sayingPi ? 'Shut up' : 'Say pi' }}</button>
+      <button @click="speakPi(cursor, sayingPi)">{{ sayingPi ? 'Shut up' : 'Say pi' }}</button>
       <input type="text" v-model="search" placeholder="search" @change="searchWord()">
     </div>
     <ul>
@@ -25,20 +25,20 @@
           >
             <span
               :class="{ 'current-cursor': (cursor<c_offset ? cursor==i : i==c_offset)}"
-              v-show="cursor>0"
+              v-show="cursor>=0"
             >
-              <span v-show="cursor>0" class="cursor">{{ cursor }}</span>
-              π {{(word-1)*10000+1}} ~ {{ (word) * 10000 }} 10d->1word）
+              <span v-show="cursor>6" class="cursor">{{ cursor-6 }}</span>
+              {{ wl[cursor]}}
             </span>
           </a>
           <div v-if="(cursor<c_offset ? cursor==i : i==c_offset)">
-            <div v-if="false" id="for-general-corpus-roaming">
+            <div v-if="false && cursor>6" id="for-general-corpus-roaming">
               <div>
                 <p v-show="false" class="def-lang">
                   <!-- <span class="def-label">[FR]</span> -->
                   {{ translation[word]['ja'] || ' ' }}
                 </p>
-                <p class="def-lang">
+                <p class="def-lang def-zh">
                   <!-- <span class="def-label">[中]</span> -->
                   {{ translation[word]['zh'] || ' ' }}
                 </p>
@@ -47,29 +47,31 @@
                   {{ translation[word]['de'] || ' ' }}
                 </p>
               </div>
-              <div>
-                <p class="def-lang def-us">
-                  <span class="def-label">[DEF]</span>
-                  {{ translation[word]['us'] || ' ' }}
-                </p>
-              </div>
-              <div v-show="translation[word]['gre']">
-                <p class="def-lang def-gre">
-                  <span class="def-label">[GRE]</span>
-                  {{ translation[word]['gre'] || ' ' }}
-                </p>
-              </div>
-              <div v-show="translation[word]['tfl']">
-                <p class="def-lang def-gre">
-                  <span class="def-label">[TOEFL]</span>
-                  {{ translation[word]['tfl'] || ' ' }}
-                </p>
-              </div>
-              <div v-show="translation[word]['ils']">
-                <p class="def-lang def-gre">
-                  <span class="def-label">[IELTS]</span>
-                  {{ translation[word]['ils'] || ' ' }}
-                </p>
+              <div v-if="true">
+                <div>
+                  <p class="def-lang def-us">
+                    <!-- <span class="def-label">[DEF]</span> -->
+                    {{ translation[word]['us'] || ' ' }}
+                  </p>
+                </div>
+                <div v-show="translation[word]['gre']">
+                  <p class="def-lang def-gre">
+                    <span class="def-label">[GRE]</span>
+                    {{ translation[word]['gre'] || ' ' }}
+                  </p>
+                </div>
+                <div v-show="translation[word]['tfl']">
+                  <p class="def-lang def-gre">
+                    <span class="def-label">[TOEFL]</span>
+                    {{ translation[word]['tfl'] || ' ' }}
+                  </p>
+                </div>
+                <div v-show="translation[word]['ils']">
+                  <p class="def-lang def-gre">
+                    <span class="def-label">[IELTS]</span>
+                    {{ translation[word]['ils'] || ' ' }}
+                  </p>
+                </div>
               </div>
 
               <table v-if="false" id="for-multilingual">
@@ -101,7 +103,7 @@
               </table>
             </div>
 
-            <div v-if="false" id="for-stem-corpus-roaming">
+            <div v-if="true" id="for-stem-corpus-roaming">
               <table>
                 <div
                   v-for="(morph, index) in word_dict[word].slice(0,max_morph(word_dict[word]))"
@@ -131,7 +133,7 @@
               </table>
             </div>
 
-            <div v-if="true" id="for-zhCN-pi-million-roaming">
+            <div v-if="false" id="for-zhCN-pi-million-roaming">
               <table>
                 <tr>
                   <td>
@@ -143,6 +145,23 @@
                 </tr>
               </table>
             </div>
+
+            <div v-if="false && cursor >= 0" id="for-animal-names-roaming" style="margin-top: 1em;">
+              <span class="def-us">{{ translation[wl[cursor]]['es'] }}</span>
+              <span class="def-us">{{ translation[wl[cursor]]['zh'] }}</span>
+              <span class="def-us">{{ translation[wl[cursor]]['fr'] }}</span>
+              <span class="def-us">{{ translation[wl[cursor]]['ja'] }}</span>
+              <span class="def-us">{{ translation[wl[cursor]]['de'] }}</span>
+              <div v-for="(group, k) in word_dict[wl[cursor]]" :key="k" class="def-us">
+                <p v-if="k>0">
+                  {{ (group).match(/^[aeiou]\w+/) ? 'an':'a'}}
+                  <span
+                    style="color:#9c27b0;font-weight:900;"
+                  >{{ group }}</span>
+                  of {{ word_dict[wl[cursor]][0] }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </li>
@@ -151,7 +170,7 @@
 </template>
 
 <script>
-import WL from "../assets/pi-zh.json";
+import WL from "../assets/word_stems_zh.json";
 import TRAN from "../assets/word_list_tran.json";
 
 export default {
@@ -188,7 +207,8 @@ export default {
     iframe_src: function() {
       let word = this.word_list[this.c_offset];
       // if (this.cursor <= 7) return "";
-      word = this.first_morph(word);
+      // word = this.first_morph(word);
+      // word = this.word_dict[word][0];
 
       return "https://pixabay.com/en/photos/" + word;
       return "https://www.stockvault.net/free-photos/" + word;
@@ -204,13 +224,13 @@ export default {
         case 44:
           if (this.cursor > 0) {
             this.cursor--;
-            this.speakStemWords(this.cursor);
+            // this.speakStemWords(this.cursor);
           }
           break;
         case 46:
           if (this.cursor < this.WL_size) {
             this.cursor++;
-            this.speakStemWords(this.cursor);
+            // this.speakStemWords(this.cursor);
           }
           break;
         case 39:
@@ -269,16 +289,14 @@ export default {
 
     loop() {
       const word = this.wl[++this.cursor];
-      let timeout = 110000;
 
-      // let timeout = this.word_dict[word].reduce((acc, mor) => {
-      //   return acc + Object.keys(mor)[0].length * 50 + 470;
-      // }, 4500 + word.length * 50);
+      let timeout = this.word_dict[word].reduce((acc, mor) => {
+        return acc + Object.keys(mor)[0].length * 50 + 450;
+      }, 4700 + word.length * 50);
 
       // this.speakWord(this.cursor);
-      // this.speakStemWords(this.cursor);
+      this.speakStemWords(this.cursor);
 
-      this.speakPi(this.cursor);
       this.autoScroll = setTimeout(this.loop, timeout);
     },
 
@@ -326,41 +344,83 @@ export default {
       }, 0); // word
     },
 
-    speakStemWords(index) {
+    speakStemWords(index, stop) {
+      if (stop) {
+        this.sayingPi = false;
+        speechSynthesis.cancel();
+        return;
+      }
+
       const stem = this.wl[index];
       // Delay showing word list to wait iframe refresh
       document.getElementById("word-list-0").classList.add("hide");
 
       setTimeout(() => {
         document.getElementById("word-list-0").classList.remove("hide");
-        this.speakMsg.voice = speechSynthesis.getVoices()[7];
+        this.speakMsg.voice = speechSynthesis.getVoices()[8];
         this.speakMsg.text = stem;
         speechSynthesis.speak(this.speakMsg);
-
-        setTimeout(() => {
-          this.speakMsg.voice = speechSynthesis.getVoices()[32];
+        this.speakMsg.onend = () => {
+          this.speakMsg.voice = speechSynthesis.getVoices()[40];
           this.speakMsg.text = this.word_dict[stem].reduce((acc, mor) => {
-            return acc + Object.keys(mor)[0] + ", ";
+            return acc + Object.keys(mor)[0] + ", ,";
           }, ", ");
           speechSynthesis.speak(this.speakMsg);
-        }, 500);
-      }, 1500);
+
+          this.speakMsg.onend = () => {
+            this.speakStemWords(+index + 1, !this.sayingPi);
+          };
+        };
+      }, 1000);
     },
 
-    speakPi(index) {
+    speakPi(index, stop) {
+      if (stop) {
+        this.sayingPi = false;
+        speechSynthesis.cancel();
+        return;
+      }
+
+      this.sayingPi = true;
       this.cursor = index;
 
-      document.getElementById("speech-content").classList.remove("move-shape");
-      setTimeout(() => {
-        document.getElementById("speech-content").classList.add("move-shape");
-      }, 100);
-
       this.speakMsg.text = this.word_dict[index];
-      this.speakMsg.voice = speechSynthesis.getVoices()[10];
+      this.speakMsg.voice = speechSynthesis.getVoices()[index > 6 ? 40 : 8];
       speechSynthesis.speak(this.speakMsg);
       this.speakMsg.onend = () => {
-        this.speakPi(+index + 1);
+        setTimeout(() => {
+          this.speakPi(+index + 1, !this.sayingPi);
+        }, 200);
       };
+    },
+
+    speakAnimal(index, stop) {
+      if (stop) {
+        this.sayingPi = false;
+        speechSynthesis.cancel();
+        return;
+      }
+      this.sayingPi = true;
+      this.cursor = index;
+      // Delay showing word list to wait iframe refresh
+      document.getElementById("word-list-0").classList.add("hide");
+
+      setTimeout(() => {
+        document.getElementById("word-list-0").classList.remove("hide");
+
+        const groups = this.word_dict[this.wl[index]].slice(1);
+        const animals = this.word_dict[this.wl[index]][0];
+        this.speakMsg.voice = speechSynthesis.getVoices()[14];
+        this.speakMsg.text = groups
+          .map(g => `${g.match(/^[aeiou]\w+/) ? "an" : "a"} ${g} of ${animals}`)
+          .join(", ");
+        speechSynthesis.speak(this.speakMsg);
+        this.speakMsg.onend = () => {
+          setTimeout(() => {
+            this.speakAnimal(+index + 1, !this.sayingPi);
+          }, 1000);
+        };
+      }, 2000);
     },
 
     searchWord() {
@@ -394,7 +454,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 50px;
+  /* margin-top: 150px; */
 }
 li {
   display: inline-block;
@@ -402,22 +462,23 @@ li {
   font-size: 150%;
   font-size: 120%;
   border-color: #009688;
-  /* max-width: 40%; */
-  /* background: #fafafadd;
-  box-shadow: 0px 0px 40px 20px #fafafadd; */
+  /* max-width: 60%; */
+  background: #fafafadd;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 40px 20px #fafafadd;
 }
 table {
-  /* table-layout: fixed; */
+  table-layout: fixed;
   /* width: 60%; */
-  margin: 10px 0px;
+  margin: 10px auto;
   padding-bottom: 50px;
 }
 td {
   min-width: 7em;
-  max-width: 12em;
-  max-width: 400px;
+  /* max-width: 12em; */
+  max-width: 200px;
   height: 1.2em;
-  width: 50%;
+  /* width: 50%; */
   overflow: hidden;
   padding-bottom: 500px;
 }
@@ -428,21 +489,24 @@ a {
 .current-cursor {
   color: #009688;
   font-size: 400%;
-  font-size: 200%;
   font-weight: 700;
+  font-family: "avenir next";
   padding: 0.2em 1em;
   z-index: 1;
 }
 .cursor {
   color: #67c79c44;
   font-size: 50%;
+  font-family: "menlo";
   position: absolute;
-  left: 30%;
+  left: 15%;
+  top: 10%;
 }
 .def-lang {
   /* display: inline-block; */
   font-size: 160%;
   font-weight: 500;
+  /* font-family: "roboto"; */
   text-align: right;
   color: #42b983;
   margin: 10px auto;
@@ -455,9 +519,13 @@ a {
 }
 .def-us {
   font-size: 130%;
+  color: #2c3e5066;
 }
 .def-zh {
   font-size: 120%;
+  font-weight: 700;
+  font-family: "Hannotate SC";
+  /* color: #607D8B; */
   text-align: left;
 }
 .def-gre {
@@ -484,7 +552,7 @@ iframe.word-image {
   width: 85%;
   height: 100%;
   background: #f6f2f2 !important;
-  opacity: 0.13;
+  opacity: 0.18;
 }
 div.footer {
   display: none;
