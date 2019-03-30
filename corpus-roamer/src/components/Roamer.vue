@@ -170,7 +170,7 @@
 </template>
 
 <script>
-import WL from "../assets/word_list_tbbt.json";
+import WL from "../assets/word_list_lemma.json";
 import STEM from "../assets/word_stems_zh.json";
 import TRAN from "../assets/word_list_tran.json";
 
@@ -186,7 +186,7 @@ export default {
       stems: Object.keys(STEM),
       translation: TRAN,
       c_offset: 0,
-      WL_size: 61420,
+      WL_size: 41295,
       cursor: 0,
       speakMsg: new SpeechSynthesisUtterance(),
       autoScroll: null,
@@ -364,19 +364,21 @@ export default {
       setTimeout(() => {
         document.getElementById("word-list-0").classList.remove("hide");
         this.speakMsg.voice = speechSynthesis.getVoices()[8];
-        this.speakMsg.text = this.wl[index].word;
+        const word = this.wl[index].word;
+        this.speakMsg.text = word
         speechSynthesis.speak(this.speakMsg);
         this.speakMsg.onend = () => {
           this.speakMsg.voice = speechSynthesis.getVoices()[40];
           if (this.word_stem[stem]) {
-            this.speakMsg.text = this.word_stem[stem].reduce((acc, mor) => {
+            this.speakMsg.text = (!!this.translation[word] && !!this.translation[word]['us']) ? this.translation[word]['us'] : '';
+            this.speakMsg.text += this.word_stem[stem].reduce((acc, mor) => {
               return acc + Object.keys(mor)[0] + ", ,";
             }, ", ");
           }
           speechSynthesis.speak(this.speakMsg);
 
           this.speakMsg.onend = () => {
-            this.speakStemWords(+index + 1, !this.sayingPi);
+            this.speakStemWords(Math.floor(Math.random()*this.WL_size+7), !this.sayingPi);
           };
         };
       }, 500);
