@@ -28,7 +28,7 @@
               v-show="cursor>0"
             >
               <span v-show="cursor>0" class="cursor">{{ cursor }}</span>
-              π {{(word-1)*10000+1}} ~ {{ (word) * 10000 }} 10d->1word）
+             圆周率 π 第{{(word-1)*10000+1}} ~ {{ (word) * 10000 }}位
             </span>
           </a>
           <div v-if="(cursor<c_offset ? cursor==i : i==c_offset)">
@@ -132,12 +132,16 @@
             </div>
 
             <div v-if="true" id="for-zhCN-pi-million-roaming">
+              <img id="pi-talk-img" src="../assets/pi-talk.gif" alt="pi">
               <table>
                 <tr>
                   <td>
                     <p id="speech-content" class="def-us">
                       <span id="speech-tracker" class="trail"></span>
-                      {{ word_dict[word]}}
+                      <span v-for="(c,j) in word_dict[word]" :key="j" class="pi-block">
+                        <span class="pi-digits">{{pi[word].substr(10*j,10)}}</span>
+                        {{ c }}
+                      </span>
                     </p>
                   </td>
                 </tr>
@@ -151,6 +155,7 @@
 </template>
 
 <script>
+import PI from "../assets/pi-digit.json";
 import WL from "../assets/pi-zh.json";
 import TRAN from "../assets/word_list_tran.json";
 
@@ -161,6 +166,7 @@ export default {
   },
   data() {
     return {
+      pi: PI,
       wl: Object.keys(WL),
       translation: TRAN,
       c_offset: 0,
@@ -356,7 +362,7 @@ export default {
       }, 100);
 
       this.speakMsg.text = this.word_dict[index];
-      this.speakMsg.voice = speechSynthesis.getVoices()[10];
+      this.speakMsg.voice = speechSynthesis.getVoices()[2];
       speechSynthesis.speak(this.speakMsg);
       this.speakMsg.onend = () => {
         this.speakPi(+index + 1);
@@ -394,7 +400,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 130px;
 }
 li {
   display: inline-block;
@@ -409,17 +415,18 @@ li {
 table {
   /* table-layout: fixed; */
   /* width: 60%; */
-  margin: 10px 0px;
+  margin: 80px 0px;
   padding-bottom: 50px;
 }
 td {
   min-width: 7em;
   max-width: 12em;
-  max-width: 400px;
+  max-width: 390px;
   height: 1.2em;
-  width: 50%;
+  width: 60%;
   overflow: hidden;
   padding-bottom: 500px;
+  line-height: 4em;
 }
 a {
   color: #2c3e5088;
@@ -427,6 +434,7 @@ a {
 }
 .current-cursor {
   color: #009688;
+  color: #EF9A9A;
   font-size: 400%;
   font-size: 200%;
   font-weight: 700;
@@ -454,7 +462,9 @@ a {
   z-index: 1;
 }
 .def-us {
-  font-size: 130%;
+  font-size: 200%;
+  font-family: 'DFKai-SB', 'KaiTi';
+  font-weight: 600;
 }
 .def-zh {
   font-size: 120%;
@@ -463,6 +473,19 @@ a {
 .def-gre {
   font-size: 130%;
   color: #67c79b;
+}
+span.pi-block {
+  display: inline-grid;
+  padding: 0px;
+  margin: 0px;
+  width: 60px;
+  max-height: 40px;
+}
+span.pi-digits {
+  position: relative;
+  top: 45px;
+  font-size: 28%;
+  font-family: 'consolas', Courier, monospace;
 }
 span.def-label {
   color: #67c79c77;
@@ -502,16 +525,23 @@ div.footer {
 }
 .move-shape {
   position: relative;
-  animation: ani 255s 1 linear;
+  animation: ani 299s 1 linear;
 }
 
 @keyframes ani {
   0% {
-    top: 45px;
+    top: 0px;
   }
 
   100% {
-    top: -2800px;
+    top: -10000px;
   }
+}
+
+#pi-talk-img{
+  position: relative;
+  top: -50px;
+  left: 0px;
+  float: right;
 }
 </style>
