@@ -29,7 +29,7 @@
             >
               <!-- <span v-show="cursor>0" class="cursor">{{ cursor }}</span>
              圆周率 π 第{{(word-1)*10000+1}} ~ {{ (word) * 10000 }}位 -->
-              <span v-show="cursor>6" class="cursor">{{ cursor-6 }}</span>
+              <!-- <span v-show="cursor>6" class="cursor">{{ cursor-6 }}</span> -->
               {{ typeof wl[cursor] == 'string' ? wl[cursor] : wl[cursor].word }}
             </span>
           </a>
@@ -176,7 +176,7 @@
 </template>
 
 <script>
-import PI from "../assets/pi-digit.json";
+// import PI from "../assets/pi-digit.json";
 import WL from "../assets/word_list_lemma.json";
 import STEM from "../assets/word_stems_zh.json";
 import TRAN from "../assets/word_list_tran.json";
@@ -188,7 +188,7 @@ export default {
   },
   data() {
     return {
-      pi: PI,
+      // pi: PI,
       wl: WL,
       word_stem: STEM,
       stems: Object.keys(STEM),
@@ -371,12 +371,12 @@ export default {
 
       setTimeout(() => {
         document.getElementById("word-list-0").classList.remove("hide");
-        this.speakMsg.voice = speechSynthesis.getVoices()[8];
+        this.speakMsg.voice = speechSynthesis.getVoices()[5];
         const word = this.wl[index].word;
         this.speakMsg.text = word
         speechSynthesis.speak(this.speakMsg);
         this.speakMsg.onend = () => {
-          this.speakMsg.voice = speechSynthesis.getVoices()[40];
+          this.speakMsg.voice = speechSynthesis.getVoices()[0];
           if (this.word_stem[stem]) {
             this.speakMsg.text = (!!this.translation[word] && !!this.translation[word]['us']) ? this.translation[word]['us'] : '';
             this.speakMsg.text += this.word_stem[stem].reduce((acc, mor) => {
@@ -386,10 +386,12 @@ export default {
           speechSynthesis.speak(this.speakMsg);
 
           this.speakMsg.onend = () => {
-            this.speakStemWords(Math.floor(Math.random()*this.WL_size+7), !this.sayingPi);
+            setTimeout(() => {
+              this.speakStemWords(Math.floor(Math.random()*this.WL_size+7), !this.sayingPi);
+            }, 3000+(this.word_stem[stem].length || 0) * 400);
           };
         };
-      }, 500);
+      }, 1800);
     },
 
     speakPi(index, stop) {
@@ -472,7 +474,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 li {
   display: inline-block;
@@ -499,7 +501,7 @@ td {
   /* width: 50%; */
   overflow: hidden;
   padding-bottom: 500px;
-  line-height: 4em;
+  /* line-height: 4em; */
 }
 a {
   color: #2c3e5088;
@@ -510,7 +512,7 @@ a {
   color: #EF9A9A;
   font-size: 400%;
   font-weight: 700;
-  font-family: "avenir next";
+  font-family: "avenir next", 'avenir lt std';
   padding: 0.2em 1em;
   z-index: 1;
 }
@@ -526,7 +528,7 @@ a {
   display: inline-block;
   font-size: 160%;
   font-weight: 500;
-  font-family: "roboto";
+  font-family: "roboto", 'DFPrareBook';
   color: #42b983;
   margin: 10px auto;
   padding: 0.1em 0.5em;
@@ -538,7 +540,7 @@ a {
 }
 .def-us {
   font-size: 200%;
-  font-family: 'DFKai-SB', 'KaiTi';
+  font-family: 'roboto';
   font-weight: 600;
   font-size: 130%;
   color: #2c3e5066;
@@ -546,7 +548,7 @@ a {
 .def-zh {
   font-size: 180%;
   font-weight: 700;
-  font-family: "Hannotate SC";
+  font-family: 'Hannotate SC', 'DFKai-SB';
   color: #607D8B;
 }
 .stem-lang {
@@ -560,7 +562,7 @@ a {
 .stem-zh {
   font-size: 120%;
   font-weight: 700;
-  font-family: "Hannotate SC";
+  font-family: 'Hannotate SC';
   text-align: left;
 }
 .def-gre {
@@ -600,7 +602,7 @@ iframe.word-image {
   width: 85%;
   height: 100%;
   background: #f6f2f2 !important;
-  opacity: 0.18;
+  opacity: 0.28;
 }
 div.footer {
   display: none;
