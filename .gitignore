@@ -1,5 +1,7 @@
 .vscode
 corpus_f*
+/rhythm
+/stemmer
 /translation
 /images
 *.txt
