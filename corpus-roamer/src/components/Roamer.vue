@@ -12,15 +12,15 @@
     </p>-->
     <div>
       <input type="number" v-model="cursor" :max="WL_size" min="-1" step="1">
-      <button @click="toggleAutoScroll()">{{ autoScroll ? 'Stop' : 'Start' }}</button>
+      <button @click="speakStemWords(cursor, sayingPi)">{{ sayingPi ? 'Stop' : 'Start' }}</button>
       <button @click="speakPi(cursor, sayingPi)">{{ sayingPi ? 'Shut up' : 'Say pi' }}</button>
       <input type="text" v-model="search" placeholder="search" @change="searchWord()">
     </div>
     <ul>
-      <li v-for="(word,i) in word_list" :key="i" :id="`word-list-${i}`">
+      <li v-for="(w,i) in word_list" :key="i" :id="`word-list-${i}`">
         <div id="word-list">
           <a
-            :href="'https://www.google.com/search?tbm=isch&tbs=itp:clipart&q='+word"
+            :href="'https://www.google.com/search?tbm=isch&tbs=itp:clipart&q='+w.word"
             target="_blank"
           >
             <span
@@ -28,48 +28,48 @@
               v-show="cursor>=0"
             >
               <span v-show="cursor>6" class="cursor">{{ cursor-6 }}</span>
-              {{ wl[cursor]}}
+              {{ typeof wl[cursor] == 'string' ? wl[cursor] : wl[cursor].word }}
             </span>
           </a>
           <div v-if="(cursor<c_offset ? cursor==i : i==c_offset)">
-            <div v-if="false && cursor>6" id="for-general-corpus-roaming">
+            <div v-if="true && cursor>6" id="for-general-corpus-roaming">
               <div>
                 <p v-show="false" class="def-lang">
                   <!-- <span class="def-label">[FR]</span> -->
-                  {{ translation[word]['ja'] || ' ' }}
+                  {{ translation[w.word]['ja'] || ' ' }}
                 </p>
                 <p class="def-lang def-zh">
                   <!-- <span class="def-label">[中]</span> -->
-                  {{ translation[word]['zh'] || ' ' }}
+                  {{ translation[w.word]['zh'] || ' ' }}
                 </p>
                 <p v-show="false" class="def-lang">
                   <!-- <span class="def-label">[DE]</span> -->
-                  {{ translation[word]['de'] || ' ' }}
+                  {{ translation[w.word]['de'] || ' ' }}
                 </p>
               </div>
               <div v-if="true">
                 <div>
                   <p class="def-lang def-us">
                     <!-- <span class="def-label">[DEF]</span> -->
-                    {{ translation[word]['us'] || ' ' }}
+                    {{ translation[w.word]['us'] != w.word ? translation[w.word]['us'] : ' ' }}
                   </p>
                 </div>
-                <div v-show="translation[word]['gre']">
+                <div v-show="translation[w.word]['gre']">
                   <p class="def-lang def-gre">
                     <span class="def-label">[GRE]</span>
-                    {{ translation[word]['gre'] || ' ' }}
+                    {{ translation[w.word]['gre'] || ' ' }}
                   </p>
                 </div>
-                <div v-show="translation[word]['tfl']">
+                <div v-show="translation[w.word]['tfl']">
                   <p class="def-lang def-gre">
                     <span class="def-label">[TOEFL]</span>
-                    {{ translation[word]['tfl'] || ' ' }}
+                    {{ translation[w.word]['tfl'] || ' ' }}
                   </p>
                 </div>
-                <div v-show="translation[word]['ils']">
+                <div v-show="translation[w.word]['ils']">
                   <p class="def-lang def-gre">
                     <span class="def-label">[IELTS]</span>
-                    {{ translation[word]['ils'] || ' ' }}
+                    {{ translation[w.word]['ils'] || ' ' }}
                   </p>
                 </div>
               </div>
@@ -103,31 +103,31 @@
               </table>
             </div>
 
-            <div v-if="true" id="for-stem-corpus-roaming">
-              <table>
+            <div v-if="true && cursor>6" id="for-stem-corpus-roaming">
+              <table v-if="word_stem[w.stem]">
                 <div
-                  v-for="(morph, index) in word_dict[word].slice(0,max_morph(word_dict[word]))"
+                  v-for="(morph, index) in word_stem[w.stem].slice(0,max_morph(word_stem[w.stem]))"
                   :key="`${Object.keys(morph)[0]}_${index}`"
                 >
                   <tr>
-                    <td class="def-lang">{{Object.entries(morph)[0][0]}}</td>
-                    <td class="def-lang def-zh">{{Object.entries(morph)[0][1]}}</td>
+                    <td class="stem-lang">{{Object.entries(morph)[0][0]}}</td>
+                    <td class="stem-lang stem-zh">{{Object.entries(morph)[0][1]}}</td>
                     <td
-                      v-if="index+max_morph(word_dict[word])<word_dict[word].length"
-                      class="def-lang"
-                    >{{Object.entries(word_dict[word][index+max_morph(word_dict[word])])[0][0]}}</td>
+                      v-if="index+max_morph(word_stem[w.stem])<word_stem[w.stem].length"
+                      class="stem-lang"
+                    >{{Object.entries(word_stem[w.stem][index+max_morph(word_stem[w.stem])])[0][0]}}</td>
                     <td
-                      v-if="index+max_morph(word_dict[word])<word_dict[word].length"
-                      class="def-lang def-zh"
-                    >{{Object.entries(word_dict[word][index+max_morph(word_dict[word])])[0][1]}}</td>
+                      v-if="index+max_morph(word_stem[w.stem])<word_stem[w.stem].length"
+                      class="stem-lang stem-zh"
+                    >{{Object.entries(word_stem[w.stem][index+max_morph(word_stem[w.stem])])[0][1]}}</td>
                     <td
-                      v-if="index+max_morph(word_dict[word])*2<word_dict[word].length"
-                      class="def-lang"
-                    >{{Object.entries(word_dict[word][index+max_morph(word_dict[word])*2])[0][0]}}</td>
+                      v-if="index+max_morph(word_stem[w.stem])*2<word_stem[w.stem].length"
+                      class="stem-lang"
+                    >{{Object.entries(word_stem[w.stem][index+max_morph(word_stem[w.stem])*2])[0][0]}}</td>
                     <td
-                      v-if="index+max_morph(word_dict[word])*2<word_dict[word].length"
-                      class="def-lang def-zh"
-                    >{{Object.entries(word_dict[word][index+max_morph(word_dict[word])*2])[0][1]}}</td>
+                      v-if="index+max_morph(word_stem[w.stem])*2<word_stem[w.stem].length"
+                      class="stem-lang stem-zh"
+                    >{{Object.entries(word_stem[w.stem][index+max_morph(word_stem[w.stem])*2])[0][1]}}</td>
                   </tr>
                 </div>
               </table>
@@ -139,7 +139,7 @@
                   <td>
                     <p id="speech-content" class="def-us">
                       <span id="speech-tracker" class="trail"></span>
-                      {{ word_dict[word]}}
+                      {{ word_stem[w.stem]}}
                     </p>
                   </td>
                 </tr>
@@ -152,13 +152,13 @@
               <span class="def-us">{{ translation[wl[cursor]]['fr'] }}</span>
               <span class="def-us">{{ translation[wl[cursor]]['ja'] }}</span>
               <span class="def-us">{{ translation[wl[cursor]]['de'] }}</span>
-              <div v-for="(group, k) in word_dict[wl[cursor]]" :key="k" class="def-us">
+              <div v-for="(group, k) in word_stem[wl[cursor]]" :key="k" class="def-us">
                 <p v-if="k>0">
                   {{ (group).match(/^[aeiou]\w+/) ? 'an':'a'}}
                   <span
                     style="color:#9c27b0;font-weight:900;"
                   >{{ group }}</span>
-                  of {{ word_dict[wl[cursor]][0] }}
+                  of {{ word_stem[wl[cursor]][0] }}
                 </p>
               </div>
             </div>
@@ -170,7 +170,8 @@
 </template>
 
 <script>
-import WL from "../assets/word_stems_zh.json";
+import WL from "../assets/word_list_tbbt.json";
+import STEM from "../assets/word_stems_zh.json";
 import TRAN from "../assets/word_list_tran.json";
 
 export default {
@@ -180,7 +181,9 @@ export default {
   },
   data() {
     return {
-      wl: Object.keys(WL),
+      wl: WL,
+      word_stem: STEM,
+      stems: Object.keys(STEM),
       translation: TRAN,
       c_offset: 0,
       WL_size: 61420,
@@ -190,7 +193,6 @@ export default {
       sayingPi: false,
       search: "",
 
-      word_dict: WL,
 
       // Speech voices
       en_male: [],
@@ -206,9 +208,11 @@ export default {
     },
     iframe_src: function() {
       let word = this.word_list[this.c_offset];
+
+      word = word.word ? word.word : word;
       // if (this.cursor <= 7) return "";
       // word = this.first_morph(word);
-      // word = this.word_dict[word][0];
+      // word = this.word_stem[w.stem][0];
 
       return "https://pixabay.com/en/photos/" + word;
       return "https://www.stockvault.net/free-photos/" + word;
@@ -290,7 +294,7 @@ export default {
     loop() {
       const word = this.wl[++this.cursor];
 
-      let timeout = this.word_dict[word].reduce((acc, mor) => {
+      let timeout = this.word_stem[w.stem].reduce((acc, mor) => {
         return acc + Object.keys(mor)[0].length * 50 + 450;
       }, 4700 + word.length * 50);
 
@@ -350,28 +354,32 @@ export default {
         speechSynthesis.cancel();
         return;
       }
+      this.sayingPi = true;
+      this.cursor = index;
 
-      const stem = this.wl[index];
+      const stem = this.wl[index].stem;
       // Delay showing word list to wait iframe refresh
       document.getElementById("word-list-0").classList.add("hide");
 
       setTimeout(() => {
         document.getElementById("word-list-0").classList.remove("hide");
         this.speakMsg.voice = speechSynthesis.getVoices()[8];
-        this.speakMsg.text = stem;
+        this.speakMsg.text = this.wl[index].word;
         speechSynthesis.speak(this.speakMsg);
         this.speakMsg.onend = () => {
           this.speakMsg.voice = speechSynthesis.getVoices()[40];
-          this.speakMsg.text = this.word_dict[stem].reduce((acc, mor) => {
-            return acc + Object.keys(mor)[0] + ", ,";
-          }, ", ");
+          if (this.word_stem[stem]) {
+            this.speakMsg.text = this.word_stem[stem].reduce((acc, mor) => {
+              return acc + Object.keys(mor)[0] + ", ,";
+            }, ", ");
+          }
           speechSynthesis.speak(this.speakMsg);
 
           this.speakMsg.onend = () => {
             this.speakStemWords(+index + 1, !this.sayingPi);
           };
         };
-      }, 1000);
+      }, 500);
     },
 
     speakPi(index, stop) {
@@ -434,9 +442,9 @@ export default {
 
     max_morph: function(morphs) {
       const len = morphs.length;
-      if (len < 13) {
+      if (len < 10) {
         return len;
-      } else if (len < 26) {
+      } else if (len < 20) {
         return Math.ceil(len / 2);
       } else {
         return Math.ceil(len / 3);
@@ -454,7 +462,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-  /* margin-top: 150px; */
+  margin-top: 10px;
 }
 li {
   display: inline-block;
@@ -476,7 +484,7 @@ table {
 td {
   min-width: 7em;
   /* max-width: 12em; */
-  max-width: 200px;
+  max-width: 300px;
   height: 1.2em;
   /* width: 50%; */
   overflow: hidden;
@@ -503,15 +511,14 @@ a {
   top: 10%;
 }
 .def-lang {
-  /* display: inline-block; */
+  display: inline-block;
   font-size: 160%;
   font-weight: 500;
-  /* font-family: "roboto"; */
-  text-align: right;
+  font-family: "roboto";
   color: #42b983;
   margin: 10px auto;
   padding: 0.1em 0.5em;
-
+  max-width: 1000px;
   /* background: #fefdfdef; */
   /* border-radius: 0.2em; */
   /* box-shadow: 0px 0px 40px 20px #fefdfdef; */
@@ -522,10 +529,23 @@ a {
   color: #2c3e5066;
 }
 .def-zh {
+  font-size: 180%;
+  font-weight: 700;
+  font-family: "Hannotate SC";
+  color: #607D8B;
+}
+.stem-lang {
+  font-size: 160%;
+  font-weight: 500;
+  text-align: right;
+  color: #42b983;
+  margin: 10px auto;
+  padding: 0.1em 0.5em;
+}
+.stem-zh {
   font-size: 120%;
   font-weight: 700;
   font-family: "Hannotate SC";
-  /* color: #607D8B; */
   text-align: left;
 }
 .def-gre {
