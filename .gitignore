@@ -5,3 +5,6 @@ corpus_f*
 /translation
 /images
 *.txt
+*.tsv
+corpus-roamer/_assets/
+/temp
