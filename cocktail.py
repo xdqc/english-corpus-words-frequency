@@ -4,8 +4,8 @@ import math
 corpus_dir = './corpus_f_n/'
 
 factors = [
-    2,
-    85,
+    5,
+    95,
     1,
     3,
     100,
