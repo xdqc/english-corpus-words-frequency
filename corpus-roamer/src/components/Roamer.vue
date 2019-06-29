@@ -28,7 +28,7 @@
               v-show="cursor>=0"
             >
               <!-- <span v-show="cursor>0" class="cursor">{{ cursor }}</span>
-             圆周率 π 第{{(word-1)*10000+1}} ~ {{ (word) * 10000 }}位 -->
+              圆周率 π 第{{(word-1)*10000+1}} ~ {{ (word) * 10000 }}位-->
               <!-- <span v-show="cursor>6" class="cursor">{{ cursor-6 }}</span> -->
               {{ typeof wl[cursor] == 'string' ? wl[cursor] : wl[cursor].word }}
             </span>
@@ -51,9 +51,9 @@
               </div>
               <div v-if="true">
                 <div>
-                  <p class="def-lang def-us">
+                  <p v-show="false" class="def-lang def-us">
                     <!-- <span class="def-label">[DEF]</span> -->
-                    {{ translation[w.word]['us'] != w.word ? translation[w.word]['us'] : ' ' }}
+                    {{ translation[w.word]['us'] !== w.word ? translation[w.word]['us'] : ' ' }}
                   </p>
                 </div>
                 <div v-show="translation[w.word]['gre']">
@@ -177,7 +177,7 @@
 
 <script>
 // import PI from "../assets/pi-digit.json";
-import WL from "../assets/word_list_lemma.json";
+import WL from "../assets/word_list_notredame.json";
 import STEM from "../assets/word_stems_zh.json";
 import TRAN from "../assets/word_list_tran.json";
 
@@ -201,7 +201,6 @@ export default {
       sayingPi: false,
       search: "",
 
-
       // Speech voices
       en_male: [],
       en_female: [],
@@ -217,7 +216,7 @@ export default {
     iframe_src: function() {
       let word = this.word_list[this.c_offset];
 
-      word = word.word ? word.word : word;
+      if (!!word) word = word.word ? word.word : word;
       // if (this.cursor <= 7) return "";
       // word = this.first_morph(word);
       // word = this.word_stem[w.stem][0];
@@ -320,38 +319,8 @@ export default {
 
       // Delay speech to wait iframe refresh
       setTimeout(() => {
-        // document.getElementById("word-list").classList.remove("hide");
-        // this.speakMsg.voice = this.en_male[
-        //   Math.floor(Math.random() * this.en_male.length)
-        // ];
         this.speakMsg.text = word;
         speechSynthesis.speak(this.speakMsg);
-        // setTimeout(() => {
-        //   if (this.translation[word]) {
-        //     this.speakMsg.voice = this.fr_female[
-        //       Math.floor(Math.random() * this.fr_female.length)
-        //     ];
-        //     this.speakMsg.text = this.translation[word]["fr"] || word;
-        //     speechSynthesis.speak(this.speakMsg);
-        //   }
-        //   setTimeout(() => {
-        //     if (this.translation[word]["zh"]) {
-        //       this.speakMsg.voice = this.zh_female[
-        //         Math.floor(Math.random() * this.zh_female.length)
-        //       ];
-        //       this.speakMsg.text = this.translation[word]["zh"];
-        //       speechSynthesis.speak(this.speakMsg);
-        //     }
-        //     setTimeout(() => {
-        //       if (this.translation[word] && this.translation[word]["us"]) {
-        //         this.speakMsg.voice = this.en_female[
-        //           Math.floor(Math.random() * this.en_female.length)
-        //         ];
-        //         this.speakMsg.text = this.translation[word]["us"];
-        //         speechSynthesis.speak(this.speakMsg);
-        //       }
-        //     }, 2000); // us
-        //   }, 1500); // zh
         // }, 700); // fr
       }, 0); // word
     },
@@ -371,25 +340,32 @@ export default {
 
       setTimeout(() => {
         document.getElementById("word-list-0").classList.remove("hide");
-        this.speakMsg.voice = speechSynthesis.getVoices()[5];
-        const word = this.wl[index].word;
-        this.speakMsg.text = word
+        this.speakMsg.voice = speechSynthesis.getVoices()[18];
+        const word = this.wl[index].word || this.wl[index];
+        this.speakMsg.text = word;
         speechSynthesis.speak(this.speakMsg);
         this.speakMsg.onend = () => {
-          this.speakMsg.voice = speechSynthesis.getVoices()[0];
           if (this.word_stem[stem]) {
-            this.speakMsg.text = (!!this.translation[word] && !!this.translation[word]['us']) ? this.translation[word]['us'] : '';
+            this.speakMsg.voice = speechSynthesis.getVoices()[64];
+            this.speakMsg.text =
+              !!this.translation[word] && !!this.translation[word]["us"]
+                ? this.translation[word]["us"]
+                : "";
             this.speakMsg.text += this.word_stem[stem].reduce((acc, mor) => {
               return acc + Object.keys(mor)[0] + ", ,";
             }, ", ");
-          }
-          speechSynthesis.speak(this.speakMsg);
+            speechSynthesis.speak(this.speakMsg);
 
-          this.speakMsg.onend = () => {
+            this.speakMsg.onend = () => {
+              setTimeout(() => {
+                this.speakStemWords(+index + 1, !this.sayingPi);
+              }, 200 + (this.word_stem[stem] ? this.word_stem[stem].length : 0 || 0) * 200);
+            };
+          } else {
             setTimeout(() => {
-              this.speakStemWords(Math.floor(Math.random()*this.WL_size+7), !this.sayingPi);
-            }, 3000+(this.word_stem[stem].length || 0) * 400);
-          };
+              this.speakStemWords(+index + 1, !this.sayingPi);
+            }, 200);
+          }
         };
       }, 1800);
     },
@@ -474,7 +450,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 li {
   display: inline-block;
@@ -509,10 +485,10 @@ a {
 }
 .current-cursor {
   color: #009688;
-  color: #EF9A9A;
+  color: #ef9a9a;
   font-size: 400%;
   font-weight: 700;
-  font-family: "avenir next", 'avenir lt std';
+  font-family: "avenir next", "avenir lt std";
   padding: 0.2em 1em;
   z-index: 1;
 }
@@ -528,7 +504,7 @@ a {
   display: inline-block;
   font-size: 160%;
   font-weight: 500;
-  font-family: "roboto", 'DFPrareBook';
+  font-family: "roboto", "DFPrareBook";
   color: #42b983;
   margin: 10px auto;
   padding: 0.1em 0.5em;
@@ -540,7 +516,7 @@ a {
 }
 .def-us {
   font-size: 200%;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-weight: 600;
   font-size: 130%;
   color: #2c3e5066;
@@ -548,8 +524,8 @@ a {
 .def-zh {
   font-size: 180%;
   font-weight: 700;
-  font-family: 'Hannotate SC', 'DFKai-SB';
-  color: #607D8B;
+  font-family: "Hannotate SC", "DFKai-SB";
+  color: #607d8b;
 }
 .stem-lang {
   font-size: 160%;
@@ -562,7 +538,7 @@ a {
 .stem-zh {
   font-size: 120%;
   font-weight: 700;
-  font-family: 'Hannotate SC';
+  font-family: "Hannotate SC";
   text-align: left;
 }
 .def-gre {
@@ -580,7 +556,7 @@ span.pi-digits {
   position: relative;
   top: 45px;
   font-size: 28%;
-  font-family: 'consolas', Courier, monospace;
+  font-family: "consolas", Courier, monospace;
 }
 span.def-label {
   color: #67c79c77;
@@ -633,7 +609,7 @@ div.footer {
   }
 }
 
-#pi-talk-img{
+#pi-talk-img {
   position: relative;
   top: -50px;
   left: 0px;
