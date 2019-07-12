@@ -1,0 +1,2783 @@
+﻿4
+00:01:58,469 --> 00:02:00,770
+My name
+
+5
+00:02:00,805 --> 00:02:03,440
+is Grey Worm.
+
+6
+00:02:05,109 --> 00:02:07,110
+I come from
+
+7
+00:02:07,144 --> 00:02:10,180
+the Summer "Ills."
+
+8
+00:02:10,214 --> 00:02:11,981
+Isles.
+
+9
+00:02:12,016 --> 00:02:15,118
+Summer Isles.
+
+10
+00:02:15,152 --> 00:02:18,354
+<i>Summer Isles.</i>
+
+11
+00:02:25,629 --> 00:02:28,665
+I am from an island
+called Naath.
+
+12
+00:02:30,568 --> 00:02:33,236
+When they took you?
+
+13
+00:02:33,270 --> 00:02:36,473
+<i>"When</i> did <i>they take me?"</i>
+
+14
+00:02:39,443 --> 00:02:41,744
+I was five years old.
+
+15
+00:02:41,779 --> 00:02:43,913
+You remember your home?
+
+16
+00:02:45,249 --> 00:02:48,218
+I remember when they
+rowed us away from shore.
+
+17
+00:02:49,687 --> 00:02:53,756
+How white
+the beaches were.
+
+18
+00:02:55,059 --> 00:02:57,427
+How tall the trees.
+
+19
+00:02:59,663 --> 00:03:03,633
+And I remember
+my village burning.
+
+20
+00:03:03,667 --> 00:03:07,170
+Smoke rising
+into the sky.
+
+21
+00:03:14,945 --> 00:03:16,813
+Do you remember your home?
+
+22
+00:03:18,415 --> 00:03:20,049
+Unsullied.
+
+23
+00:03:20,084 --> 00:03:22,619
+Always Unsullied.
+
+24
+00:03:22,653 --> 00:03:25,989
+Before Unsullied,
+nothing.
+
+25
+00:03:26,023 --> 00:03:28,258
+That's not true.
+
+26
+00:03:30,227 --> 00:03:32,962
+Perhaps one day you will return
+to the Summer Isles.
+
+27
+00:03:32,997 --> 00:03:34,797
+I don't want return.
+
+28
+00:03:40,104 --> 00:03:41,671
+Kill the masters.
+
+29
+00:03:41,705 --> 00:03:44,274
+Kill the masters.
+
+30
+00:03:46,176 --> 00:03:47,810
+<i>How are the lessons coming?</i>
+
+31
+00:03:47,845 --> 00:03:50,780
+Very well,
+Your Grace.
+
+32
+00:03:50,814 --> 00:03:54,217
+Missandei is teacher
+good, my queen.
+
+33
+00:03:57,121 --> 00:03:59,055
+You'll have
+to continue later.
+
+34
+00:04:00,958 --> 00:04:03,026
+It's time.
+
+35
+00:07:51,622 --> 00:07:55,324
+Mhysa! Mhysa! Mhysa!
+
+36
+00:07:55,359 --> 00:07:59,228
+Mhysa! Mhysa!
+Mhysa! Mhysa!
+
+37
+00:08:33,697 --> 00:08:36,732
+Mhysa! Mhysa!
+
+38
+00:08:41,705 --> 00:08:43,472
+<i>Remind me, Ser Jorah,</i>
+
+39
+00:08:43,507 --> 00:08:47,009
+<i>how many children did the</i>
+<i>Great Masters nail to mileposts?</i>
+
+40
+00:08:47,044 --> 00:08:50,346
+163, Khaleesi.
+
+41
+00:08:50,380 --> 00:08:52,381
+Yes, that was it.
+
+42
+00:09:00,824 --> 00:09:03,693
+<i>Your Grace,</i>
+<i>may I have a word?</i>
+
+43
+00:09:09,099 --> 00:09:10,566
+The city is yours.
+
+44
+00:09:10,601 --> 00:09:13,402
+<i>All these people,</i>
+<i>they're your subjects now.</i>
+
+45
+00:09:14,638 --> 00:09:17,139
+Sometimes it is better
+to answer injustice
+
+46
+00:09:17,174 --> 00:09:18,975
+with mercy.
+
+47
+00:09:19,009 --> 00:09:23,145
+I will answer injustice
+with justice.
+
+48
+00:10:41,825 --> 00:10:43,626
+What the hell was that?
+
+49
+00:10:43,660 --> 00:10:47,129
+That was me knocking your ass
+to the dirt
+
+50
+00:10:47,164 --> 00:10:48,864
+with your own hand.
+
+51
+00:10:51,802 --> 00:10:52,969
+You're a rare talent.
+
+52
+00:10:53,003 --> 00:10:56,238
+When you're fighting
+cripples, anyway.
+
+53
+00:10:57,674 --> 00:10:59,775
+You learned to fight
+like a good little boy.
+
+54
+00:10:59,810 --> 00:11:01,642
+I'll bet that thrust
+through the Mad King's back
+
+55
+00:11:01,667 --> 00:11:02,878
+was pretty as a picture.
+
+56
+00:11:02,879 --> 00:11:05,247
+<i>You want to fight pretty</i>
+<i>or you want to win?</i>
+
+57
+00:11:05,282 --> 00:11:07,083
+You talk to my brother
+this way?
+
+58
+00:11:07,117 --> 00:11:08,651
+All the time.
+
+59
+00:11:08,685 --> 00:11:11,020
+He got used to it.
+
+60
+00:11:18,462 --> 00:11:20,930
+Do you think
+he did it?
+
+61
+00:11:20,964 --> 00:11:23,032
+No.
+
+62
+00:11:23,066 --> 00:11:25,568
+Oh, he hated
+the little twat, sure.
+
+63
+00:11:25,602 --> 00:11:27,603
+But who didn't?
+
+64
+00:11:28,572 --> 00:11:30,639
+And poison's
+not his style.
+
+65
+00:11:31,608 --> 00:11:34,076
+Or murder,
+for that matter.
+
+66
+00:11:35,445 --> 00:11:37,813
+You want to know for sure,
+why don't you ask him?
+
+67
+00:11:42,419 --> 00:11:44,320
+You haven't been
+to see him yet, eh?
+
+68
+00:11:45,422 --> 00:11:47,256
+We're done for today.
+
+69
+00:11:50,460 --> 00:11:52,461
+Your brother ever tell you
+how I came into his service?
+
+70
+00:11:52,496 --> 00:11:55,664
+You stood for him in his trial
+by combat at the Eyrie.
+
+71
+00:11:55,699 --> 00:11:57,833
+Aye.
+
+72
+00:11:57,868 --> 00:11:59,869
+But only when
+Lady Arryn demanded
+
+73
+00:11:59,903 --> 00:12:02,538
+the trial take place
+that day.
+
+74
+00:12:02,572 --> 00:12:04,707
+You were his first choice.
+
+75
+00:12:04,741 --> 00:12:07,143
+He named you
+for his champion
+
+76
+00:12:07,177 --> 00:12:09,271
+because he knew you
+would ride day and night
+
+77
+00:12:09,296 --> 00:12:11,296
+to come fight for him.
+
+78
+00:12:12,382 --> 00:12:14,250
+You gonna fight
+for him now?
+
+79
+00:12:22,325 --> 00:12:24,927
+To tell you the truth,
+this isn't so bad.
+
+80
+00:12:24,961 --> 00:12:28,030
+Four walls.
+A pot to piss in.
+
+81
+00:12:28,065 --> 00:12:30,833
+I was chained
+to a wooden post
+
+82
+00:12:30,867 --> 00:12:33,469
+covered in my own
+shit for months.
+
+83
+00:12:36,406 --> 00:12:39,041
+Is that supposed
+to make me feel better?
+
+84
+00:12:39,076 --> 00:12:40,810
+Maybe a bit.
+
+85
+00:12:43,680 --> 00:12:45,548
+I'm sorry I didn't
+come sooner.
+
+86
+00:12:45,582 --> 00:12:48,417
+It's complicated, yes.
+
+87
+00:12:49,653 --> 00:12:52,421
+- So how is our sister?
+- How do you think?
+
+88
+00:12:52,456 --> 00:12:55,057
+Her son died in her arms.
+
+89
+00:12:55,092 --> 00:12:57,660
+Her son?
+
+90
+00:12:57,694 --> 00:13:00,062
+Don't.
+
+91
+00:13:04,634 --> 00:13:06,836
+You know what's coming?
+
+92
+00:13:06,870 --> 00:13:09,672
+My trial for regicide.
+Yes, I know.
+
+93
+00:13:11,041 --> 00:13:14,743
+I know the whole bloody
+country thinks I'm guilty.
+
+94
+00:13:14,778 --> 00:13:16,946
+I know that one
+of my three judges
+
+95
+00:13:16,980 --> 00:13:19,215
+has wished me dead more
+times than I can count.
+
+96
+00:13:19,249 --> 00:13:21,750
+And that judge
+is my father.
+
+97
+00:13:22,919 --> 00:13:24,353
+As for Cersei,
+
+98
+00:13:24,387 --> 00:13:26,355
+well, she's probably
+working on a way
+
+99
+00:13:26,423 --> 00:13:29,225
+to avoid a trial altogether
+by having me killed.
+
+100
+00:13:29,259 --> 00:13:32,695
+Now that you mention it,
+she did ask.
+
+101
+00:13:32,729 --> 00:13:35,598
+So, should I turn around
+and close my eyes?
+
+102
+00:13:35,665 --> 00:13:37,766
+Depends.
+
+103
+00:13:37,801 --> 00:13:40,002
+Did you do it?
+
+104
+00:13:40,036 --> 00:13:41,770
+The Kingslayer brothers.
+
+105
+00:13:41,805 --> 00:13:45,207
+You like it?
+I like it.
+
+106
+00:13:46,943 --> 00:13:49,678
+You're really asking
+if I killed your son?
+
+107
+00:13:49,713 --> 00:13:53,249
+Are you really asking
+if I'd kill my brother?
+
+108
+00:13:56,953 --> 00:13:58,687
+How can I help you?
+
+109
+00:13:59,789 --> 00:14:01,257
+Well, you could
+set me free.
+
+110
+00:14:02,492 --> 00:14:04,426
+You know I can't.
+
+111
+00:14:04,461 --> 00:14:07,496
+Then there's really
+nothing else to say.
+
+112
+00:14:07,531 --> 00:14:09,899
+What do you want me to do?
+Kill the guards?
+
+113
+00:14:09,966 --> 00:14:11,400
+Sneak you out of the city
+in the back of a cart?
+
+114
+00:14:11,434 --> 00:14:13,369
+I'm the Lord Commander
+of the Kingsguard.
+
+115
+00:14:13,403 --> 00:14:15,171
+Sorry, I'd forgotten.
+
+116
+00:14:15,205 --> 00:14:17,306
+I'd hate for you to do
+something inappropriate.
+
+117
+00:14:17,340 --> 00:14:18,807
+Inappropriate?
+
+118
+00:14:18,842 --> 00:14:21,810
+You're accused of killing the king.
+Freeing you is treason.
+
+119
+00:14:21,845 --> 00:14:23,746
+Except I didn't do it.
+
+120
+00:14:23,780 --> 00:14:25,781
+Which is why
+we're having a trial.
+
+121
+00:14:25,815 --> 00:14:28,117
+A trial.
+
+122
+00:14:28,151 --> 00:14:30,886
+If the killer threw himself
+before the Iron Throne,
+
+123
+00:14:30,921 --> 00:14:32,459
+confessed to his crimes,
+
+124
+00:14:32,484 --> 00:14:34,918
+and gave irrefutable
+evidence of his guilt,
+
+125
+00:14:35,258 --> 00:14:36,692
+<i>it wouldn't matter</i>
+<i>to Cersei.</i>
+
+126
+00:14:36,726 --> 00:14:39,728
+She won't rest
+until my head's on a spike.
+
+127
+00:14:39,763 --> 00:14:41,897
+Not just yours.
+
+128
+00:14:41,932 --> 00:14:45,301
+She's offering a knighthood
+to whomever finds Sansa Stark.
+
+129
+00:14:45,335 --> 00:14:46,936
+Sansa couldn't
+have done this.
+
+130
+00:14:46,970 --> 00:14:49,193
+She had more reason than
+anyone in the Seven Kingdoms.
+
+131
+00:14:49,194 --> 00:14:50,469
+Do you think it's a coincidence
+
+132
+00:14:50,494 --> 00:14:52,308
+she disappeared the same
+night Joffrey died?
+
+133
+00:14:52,309 --> 00:14:54,577
+No, but...
+
+134
+00:14:55,612 --> 00:14:57,813
+Sansa's not a killer.
+
+135
+00:15:00,116 --> 00:15:01,483
+Not yet, anyway.
+
+136
+00:15:14,931 --> 00:15:16,999
+Where are you taking me?
+
+137
+00:15:17,033 --> 00:15:19,201
+I'm getting married
+to your Aunt Lysa.
+
+138
+00:15:19,236 --> 00:15:21,470
+She's waiting for us
+at the Eyrie.
+
+139
+00:15:21,504 --> 00:15:24,273
+You'll be safe there.
+
+140
+00:15:36,386 --> 00:15:38,087
+Did you kill Joffrey?
+
+141
+00:15:38,121 --> 00:15:41,290
+Did I kill Joffrey?
+
+142
+00:15:42,659 --> 00:15:44,593
+I've been in
+the Vale for weeks.
+
+143
+00:15:44,628 --> 00:15:45,794
+I know it was you.
+
+144
+00:15:45,829 --> 00:15:49,765
+And who helped me
+with this conspiracy?
+
+145
+00:15:51,868 --> 00:15:53,669
+Well, there was Ser Dontos.
+
+146
+00:15:53,703 --> 00:15:55,904
+You used him to get
+me out of King's Landing,
+
+147
+00:15:55,939 --> 00:15:58,540
+but you would never trust
+him to kill the king.
+
+148
+00:15:58,642 --> 00:15:59,600
+Why not?
+
+149
+00:15:59,625 --> 00:16:01,823
+Because you're too smart
+to trust a drunk.
+
+150
+00:16:02,245 --> 00:16:04,780
+Then perhaps it was
+your husband.
+
+151
+00:16:04,814 --> 00:16:06,348
+No.
+
+152
+00:16:06,383 --> 00:16:08,117
+<i>How do you know?</i>
+
+153
+00:16:08,151 --> 00:16:10,786
+I just do.
+
+154
+00:16:10,820 --> 00:16:12,955
+You're right.
+
+155
+00:16:12,989 --> 00:16:15,457
+He wasn't involved
+in Joffrey's death.
+
+156
+00:16:15,492 --> 00:16:17,526
+But you were.
+
+157
+00:16:18,962 --> 00:16:22,264
+<i>Do you remember that lovely</i>
+<i>necklace Dontos gave you?</i>
+
+158
+00:16:22,299 --> 00:16:26,468
+<i>I don't suppose you noticed</i>
+<i>that a stone was missing</i>
+
+159
+00:16:26,536 --> 00:16:28,771
+<i>after the feast.</i>
+
+160
+00:16:28,805 --> 00:16:31,340
+The poison.
+
+161
+00:16:33,176 --> 00:16:35,377
+I don't understand.
+
+162
+00:16:35,412 --> 00:16:37,980
+The Lannisters gave you
+wealth, power.
+
+163
+00:16:38,014 --> 00:16:39,815
+Joffrey made you
+the Lord of Harrenhal.
+
+164
+00:16:39,849 --> 00:16:42,718
+A man with no motive
+is a man no one suspects.
+
+165
+00:16:42,752 --> 00:16:45,421
+<i>Always keep</i>
+<i>your foes confused.</i>
+
+166
+00:16:45,455 --> 00:16:48,357
+If they don't know who
+you are or what you want,
+
+167
+00:16:48,391 --> 00:16:51,493
+they can't know
+what you plan to do next.
+
+168
+00:16:54,464 --> 00:16:56,432
+I don't believe you.
+
+169
+00:16:58,201 --> 00:17:00,602
+<i>If they catch you,</i>
+<i>they'll put your head on a spike</i>
+
+170
+00:17:00,637 --> 00:17:02,004
+<i>just like my father's.</i>
+
+171
+00:17:02,038 --> 00:17:05,240
+You'd risk that
+just to confuse them?
+
+172
+00:17:06,843 --> 00:17:10,379
+So many men,
+they risk so little.
+
+173
+00:17:10,413 --> 00:17:13,415
+They spend their lives
+avoiding danger.
+
+174
+00:17:13,450 --> 00:17:15,851
+And then they die.
+
+175
+00:17:17,153 --> 00:17:20,956
+I'd risk everything
+to get what I want.
+
+176
+00:17:20,990 --> 00:17:24,126
+And what do you want?
+
+177
+00:17:30,066 --> 00:17:31,667
+Everything.
+
+178
+00:17:33,503 --> 00:17:36,839
+My friendship with the Lannisters
+was productive.
+
+179
+00:17:36,873 --> 00:17:39,575
+But Joffrey,
+
+180
+00:17:39,609 --> 00:17:42,144
+a vicious boy with
+a crown on his head,
+
+181
+00:17:42,178 --> 00:17:44,446
+is not a reliable ally.
+
+182
+00:17:44,481 --> 00:17:46,448
+And who could trust
+a friend like that?
+
+183
+00:17:46,483 --> 00:17:48,717
+Who could trust you?
+
+184
+00:17:49,986 --> 00:17:52,287
+I don't want
+friends like me.
+
+185
+00:17:52,322 --> 00:17:54,790
+My new friends
+are predictable.
+
+186
+00:17:54,824 --> 00:17:56,325
+Very reasonable people.
+
+187
+00:17:56,359 --> 00:17:59,061
+<i>As for what</i>
+<i>happened to Joffrey,</i>
+
+188
+00:17:59,095 --> 00:18:03,399
+well, that was something
+my new friends wanted very badly.
+
+189
+00:18:03,433 --> 00:18:05,901
+<i>Nothing like</i>
+<i>a thoughtful gift</i>
+
+190
+00:18:05,969 --> 00:18:08,537
+<i>to make a new friendship</i>
+<i>grow strong.</i>
+
+191
+00:18:08,571 --> 00:18:10,472
+I can't believe
+you're going.
+
+192
+00:18:10,507 --> 00:18:13,108
+Leaving me alone here
+with these people.
+
+193
+00:18:13,143 --> 00:18:15,477
+<i>The time has come,</i>
+<i>my dear.</i>
+
+194
+00:18:15,512 --> 00:18:18,547
+There's nothing
+more tedious than a trial.
+
+195
+00:18:18,581 --> 00:18:21,049
+Except perhaps
+these gardens.
+
+196
+00:18:21,084 --> 00:18:23,819
+If I have to take one
+more leisurely stroll
+
+197
+00:18:23,853 --> 00:18:27,055
+through these gardens,
+I'll fling myself from the cliffs.
+
+198
+00:18:28,625 --> 00:18:30,592
+Have you been
+to see Tommen yet?
+
+199
+00:18:30,627 --> 00:18:32,594
+No.
+
+200
+00:18:32,629 --> 00:18:34,563
+Have they even agreed
+to the match?
+
+201
+00:18:34,597 --> 00:18:36,331
+No one tells me anything.
+
+202
+00:18:36,366 --> 00:18:37,621
+I wasn't originally meant
+
+203
+00:18:37,646 --> 00:18:39,801
+to marry your grandfather
+Luthor, you know.
+
+204
+00:18:40,603 --> 00:18:42,971
+He was engaged
+to my sister,
+
+205
+00:18:43,006 --> 00:18:45,174
+your great-aunt Viola.
+
+206
+00:18:45,208 --> 00:18:48,444
+I was to be given
+to some Targaryen or other.
+
+207
+00:18:48,478 --> 00:18:52,214
+Marrying a Targaryen
+was all the rage back then.
+
+208
+00:18:52,248 --> 00:18:54,783
+But the moment
+I saw my intended,
+
+209
+00:18:54,818 --> 00:18:58,187
+with his twitchy
+little ferret's face
+
+210
+00:18:58,221 --> 00:19:00,155
+and ludicrous silver hair,
+
+211
+00:19:00,190 --> 00:19:02,224
+I knew he wouldn't do.
+
+212
+00:19:02,258 --> 00:19:04,793
+So the evening
+
+213
+00:19:04,828 --> 00:19:07,896
+before Luthor was
+to propose to my sister,
+
+214
+00:19:07,931 --> 00:19:10,599
+I got lost on my way back
+from my embroidery lesson
+
+215
+00:19:10,633 --> 00:19:12,935
+and happened
+upon his chamber.
+
+216
+00:19:14,204 --> 00:19:16,538
+- How absentminded of me.
+- Mm-hmm.
+
+217
+00:19:16,573 --> 00:19:20,742
+The following morning,
+Luthor never made it down the stairs
+
+218
+00:19:20,777 --> 00:19:24,513
+to propose to my sister
+'cause the boy couldn't bloody walk.
+
+219
+00:19:24,547 --> 00:19:26,849
+And once he could,
+the only thing he wanted
+
+220
+00:19:26,883 --> 00:19:29,284
+was what I'd given him
+the night before.
+
+221
+00:19:29,319 --> 00:19:31,487
+I was good.
+
+222
+00:19:31,521 --> 00:19:34,223
+I was very, very good.
+
+223
+00:19:36,025 --> 00:19:38,660
+You are even better.
+
+224
+00:19:38,728 --> 00:19:40,295
+But you need
+to act quickly.
+
+225
+00:19:40,330 --> 00:19:44,166
+Cersei may be vicious,
+but she's not stupid.
+
+226
+00:19:44,200 --> 00:19:47,102
+She'll turn the boy
+against you as soon as she can.
+
+227
+00:19:47,136 --> 00:19:50,439
+And by the time you're married,
+it'll be too late.
+
+228
+00:19:50,473 --> 00:19:52,441
+Luckily for you,
+the Queen Regent
+
+229
+00:19:52,475 --> 00:19:54,309
+is rather distracted
+at the moment.
+
+230
+00:19:54,344 --> 00:19:56,778
+mourning her dear
+departed boy.
+
+231
+00:19:56,813 --> 00:19:59,181
+Accusing her brother
+of his murder,
+
+232
+00:19:59,215 --> 00:20:01,183
+which he didn't commit.
+
+233
+00:20:01,217 --> 00:20:02,351
+Well, he could have done.
+
+234
+00:20:02,385 --> 00:20:04,319
+He could have done,
+but he didn't.
+
+235
+00:20:04,354 --> 00:20:07,356
+- You don't know, Grandmother.
+- But I do know.
+
+236
+00:20:07,390 --> 00:20:11,960
+You don't think I'd let you
+marry that beast, do you?
+
+237
+00:20:13,029 --> 00:20:16,064
+What?
+I don't understand.
+
+238
+00:20:16,099 --> 00:20:19,701
+Shh. Don't you worry
+yourself about all that.
+
+239
+00:20:22,005 --> 00:20:24,373
+You just do
+what needs to be done.
+
+240
+00:20:25,842 --> 00:20:27,843
+<i>Bring it through!</i>
+
+241
+00:20:35,184 --> 00:20:37,486
+And again.
+
+242
+00:20:42,959 --> 00:20:46,728
+Very nice. Good.
+
+243
+00:20:46,763 --> 00:20:49,431
+A lot of wildlings fight
+with a weapon in each hand.
+
+244
+00:20:49,465 --> 00:20:52,467
+First thing you want to do
+
+245
+00:20:52,535 --> 00:20:55,270
+is disarm them to try
+and even the odds.
+
+246
+00:21:08,985 --> 00:21:10,719
+Let's see what you can do.
+
+247
+00:21:12,622 --> 00:21:14,423
+Olly, you just watch
+for now.
+
+248
+00:21:14,457 --> 00:21:15,524
+I can fight.
+
+249
+00:21:15,558 --> 00:21:17,626
+Have you ever
+held a sword before?
+
+250
+00:21:17,660 --> 00:21:19,695
+I was the best archer
+in our hamlet.
+
+251
+00:21:19,729 --> 00:21:22,130
+I was!
+
+252
+00:21:22,165 --> 00:21:24,466
+I believe you.
+
+253
+00:21:24,500 --> 00:21:26,134
+We'll go hunting
+for rabbits one day.
+
+254
+00:21:26,202 --> 00:21:27,869
+Rit now,
+watch and learn.
+
+255
+00:21:30,173 --> 00:21:32,140
+You two.
+
+256
+00:21:32,175 --> 00:21:35,277
+Take it slow,
+try and disarm each other.
+
+257
+00:22:01,070 --> 00:22:02,804
+You know how to fight.
+
+258
+00:22:02,839 --> 00:22:05,307
+You could have gone
+easier on him.
+
+259
+00:22:05,341 --> 00:22:07,776
+He wouldn't have learned
+anything that way.
+
+260
+00:22:10,813 --> 00:22:13,281
+<i>What do you think</i>
+<i>you're doing?</i>
+
+261
+00:22:13,316 --> 00:22:15,951
+Grenn and I were
+helping them.
+
+262
+00:22:15,985 --> 00:22:18,086
+Grenn's a ranger.
+You're a steward.
+
+263
+00:22:18,121 --> 00:22:21,223
+Maybe you forgot that while you
+were off with your wildling bitch,
+
+264
+00:22:21,257 --> 00:22:23,225
+but I didn't.
+
+265
+00:22:23,259 --> 00:22:25,594
+Someone has
+to train them.
+
+266
+00:22:25,628 --> 00:22:27,496
+And that someone
+isn't you.
+
+267
+00:22:27,530 --> 00:22:29,865
+Go find a chamber pot
+to empty.
+
+268
+00:22:32,435 --> 00:22:35,170
+Go on. Do it.
+
+269
+00:22:35,204 --> 00:22:37,205
+You traitor's bastard.
+
+270
+00:22:37,240 --> 00:22:39,174
+Give me an excuse.
+
+271
+00:22:39,208 --> 00:22:42,110
+Mormont's not here
+to protect you now.
+
+272
+00:22:53,089 --> 00:22:55,524
+Get back to work.
+
+273
+00:22:55,558 --> 00:22:57,959
+Now!
+
+274
+00:22:57,994 --> 00:23:00,529
+I said now!
+
+275
+00:23:03,666 --> 00:23:06,768
+The bastard's well-liked.
+You're not.
+
+276
+00:23:06,803 --> 00:23:09,371
+You think I care if they like me?
+We're at war.
+
+277
+00:23:09,405 --> 00:23:10,939
+For now.
+
+278
+00:23:11,007 --> 00:23:13,175
+But you can't be
+acting commander forever.
+
+279
+00:23:13,209 --> 00:23:15,343
+There will be a choosing.
+
+280
+00:23:15,378 --> 00:23:17,312
+The old maester
+will insist on it.
+
+281
+00:23:17,346 --> 00:23:19,815
+You might reconsider
+
+282
+00:23:19,849 --> 00:23:22,584
+his request to march
+on Craster's.
+
+283
+00:23:22,618 --> 00:23:26,221
+Let the mutineers
+take care of Snow.
+
+284
+00:23:26,255 --> 00:23:28,657
+Or you might be taking
+orders from him
+
+285
+00:23:28,691 --> 00:23:30,258
+the rest of your life.
+
+286
+00:23:45,808 --> 00:23:47,275
+A bastard, eh?
+
+287
+00:23:47,310 --> 00:23:50,045
+Took you for highborn.
+
+288
+00:23:51,447 --> 00:23:53,415
+My father was highborn.
+
+289
+00:23:53,449 --> 00:23:56,118
+My mother wasn't.
+
+290
+00:23:58,287 --> 00:24:00,188
+Name's Locke.
+
+291
+00:24:02,759 --> 00:24:04,025
+Jon Snow.
+
+292
+00:24:07,497 --> 00:24:08,930
+You fight well.
+
+293
+00:24:08,965 --> 00:24:10,665
+What brought you up here?
+
+294
+00:24:10,700 --> 00:24:12,801
+A sense of duty.
+
+295
+00:24:12,835 --> 00:24:16,104
+I wanted to do my part
+for the safety of the realm.
+
+296
+00:24:18,808 --> 00:24:21,376
+I was a game warden
+in the Stormlands.
+
+297
+00:24:21,410 --> 00:24:24,012
+Fed a prized partridge
+to my hungry kids.
+
+298
+00:24:24,046 --> 00:24:25,847
+I was stupid enough
+to get caught.
+
+299
+00:24:25,915 --> 00:24:28,016
+Chose the Wall
+over losing my hand.
+
+300
+00:24:28,050 --> 00:24:31,753
+Figured I wouldn't have to suck up
+to any highborn cunts here.
+
+301
+00:24:31,788 --> 00:24:34,022
+<i>Come on, get on with it.</i>
+
+302
+00:24:34,056 --> 00:24:35,791
+What are you
+waiting for? Summer?
+
+303
+00:24:35,825 --> 00:24:37,292
+Guess I was wrong.
+
+304
+00:24:57,480 --> 00:24:59,581
+You sent for me,
+Your Grace?
+
+305
+00:24:59,615 --> 00:25:01,550
+Your Grace.
+
+306
+00:25:01,584 --> 00:25:03,385
+How formal of you.
+
+307
+00:25:05,288 --> 00:25:08,523
+How many Kingsguards
+are posted outside Tommen's door?
+
+308
+00:25:08,558 --> 00:25:11,960
+Ser Boros
+is on duty tonight.
+
+309
+00:25:11,994 --> 00:25:14,329
+- Tomorrow I believe--
+- <i>So one?</i>
+
+310
+00:25:15,598 --> 00:25:18,500
+You have one man
+guarding the future king?
+
+311
+00:25:18,534 --> 00:25:20,602
+I promise you
+Tommen's safe.
+
+312
+00:25:20,636 --> 00:25:21,870
+We're protecting him.
+
+313
+00:25:21,904 --> 00:25:25,040
+The way you
+protected Joffrey?
+
+314
+00:25:26,375 --> 00:25:28,910
+Why did Catelyn Stark
+set you free?
+
+315
+00:25:28,978 --> 00:25:31,613
+- What?
+- I've been wondering for months.
+
+316
+00:25:31,647 --> 00:25:35,417
+Ever since that great cow brought
+you back to the capital.
+
+317
+00:25:36,385 --> 00:25:38,086
+Why did she
+set you free?
+
+318
+00:25:38,120 --> 00:25:39,183
+You know why.
+
+319
+00:25:39,208 --> 00:25:41,180
+She'd hoped I'd send
+her daughters back to her.
+
+320
+00:25:46,128 --> 00:25:48,063
+She hoped
+or did you promise?
+
+321
+00:25:48,097 --> 00:25:49,931
+I swore by all the gods
+
+322
+00:25:49,966 --> 00:25:52,434
+that if her daughters were alive,
+I'd return them to her.
+
+323
+00:25:52,501 --> 00:25:54,369
+So you made a sacred vow
+to the enemy.
+
+324
+00:25:54,403 --> 00:25:57,105
+I wanted to get
+back to you.
+
+325
+00:25:58,207 --> 00:25:59,908
+Should I have told her
+to fuck off?
+
+326
+00:25:59,942 --> 00:26:01,843
+You didn't mean it, then?
+
+327
+00:26:01,878 --> 00:26:04,880
+You have no loyalty
+to Catelyn Stark?
+
+328
+00:26:04,914 --> 00:26:06,781
+Catelyn Stark's dead.
+
+329
+00:26:06,816 --> 00:26:09,084
+So if I told you to leave the capital
+right now and find Sansa,
+
+330
+00:26:09,118 --> 00:26:13,255
+if I told you to find that
+murderous little bitch
+
+331
+00:26:13,322 --> 00:26:15,323
+and bring me her head,
+
+332
+00:26:15,358 --> 00:26:17,592
+would you do it?
+
+333
+00:26:22,098 --> 00:26:24,366
+I know you went
+to see Tyrion.
+
+334
+00:26:26,736 --> 00:26:30,538
+That creature
+who murdered our son.
+
+335
+00:26:32,775 --> 00:26:35,010
+I had to see him.
+
+336
+00:26:35,044 --> 00:26:36,544
+I had to know
+for myself.
+
+337
+00:26:36,579 --> 00:26:38,580
+And?
+
+338
+00:26:40,182 --> 00:26:42,784
+He didn't do it, Cersei.
+
+339
+00:26:42,818 --> 00:26:45,287
+You've always pitied him.
+
+340
+00:26:45,321 --> 00:26:48,657
+Our poor little brother.
+
+341
+00:26:48,691 --> 00:26:50,458
+Abused by the world.
+
+342
+00:26:50,493 --> 00:26:52,460
+Despised by his father
+and sister.
+
+343
+00:26:52,495 --> 00:26:55,363
+He'd kill us all
+if he could.
+
+344
+00:26:58,200 --> 00:27:01,536
+I want four men
+at Tommen's door day and night.
+
+345
+00:27:03,205 --> 00:27:05,774
+That will be all,
+Lord Commander.
+
+346
+00:27:40,376 --> 00:27:42,444
+Ser Pounce?
+
+347
+00:27:56,392 --> 00:27:58,593
+How did you get past
+the Kingsguard?
+
+348
+00:27:58,627 --> 00:28:01,262
+Kingsguard.
+
+349
+00:28:02,631 --> 00:28:05,834
+I don't think you're
+supposed to be here.
+
+350
+00:28:05,868 --> 00:28:08,870
+Mother doesn't allow me
+to have visitors at night.
+
+351
+00:28:08,904 --> 00:28:11,439
+I'm not a visitor,
+Your Grace.
+
+352
+00:28:11,474 --> 00:28:14,709
+Word has it
+I'm to be your bride.
+
+353
+00:28:19,815 --> 00:28:22,183
+Did you know that people
+in arranged marriages
+
+354
+00:28:22,218 --> 00:28:25,253
+often never meet
+until their wedding day?
+
+355
+00:28:27,957 --> 00:28:31,593
+Before we decide to spend
+our lives together,
+
+356
+00:28:31,627 --> 00:28:33,828
+we ought to get
+to know one another.
+
+357
+00:28:33,863 --> 00:28:36,031
+Don't you think?
+
+358
+00:28:37,533 --> 00:28:39,401
+Yes.
+
+359
+00:28:39,435 --> 00:28:41,469
+But if my mother
+found out--
+
+360
+00:28:41,504 --> 00:28:44,139
+It can be our secret.
+Hmm?
+
+361
+00:28:46,108 --> 00:28:48,543
+If we're going to be
+man and wife,
+
+362
+00:28:48,577 --> 00:28:52,480
+we'll have a few secrets
+from her, I hope.
+
+363
+00:28:54,016 --> 00:28:56,484
+So, Your Grace...
+
+364
+00:28:56,519 --> 00:28:58,853
+Yes?
+
+365
+00:28:58,888 --> 00:29:01,689
+Tell me a secret.
+
+366
+00:29:08,964 --> 00:29:11,433
+Hello. Aren't you
+a proper fellow?
+
+367
+00:29:11,467 --> 00:29:13,835
+That's Ser Pounce.
+
+368
+00:29:13,869 --> 00:29:16,237
+Very handsome.
+
+369
+00:29:18,307 --> 00:29:19,741
+Joffrey didn't like him.
+
+370
+00:29:19,775 --> 00:29:22,243
+He threatened
+to skin him alive
+
+371
+00:29:22,278 --> 00:29:24,112
+and mix his innards
+up in my food
+
+372
+00:29:24,146 --> 00:29:25,914
+so I wouldn't know
+I was eating him.
+
+373
+00:29:25,981 --> 00:29:28,683
+That's very cruel.
+
+374
+00:29:28,717 --> 00:29:31,653
+You don't strike me
+as cruel.
+
+375
+00:29:33,122 --> 00:29:34,823
+No.
+
+376
+00:29:34,857 --> 00:29:36,724
+I don't think I am.
+
+377
+00:29:36,759 --> 00:29:38,793
+That's a relief.
+
+378
+00:29:38,828 --> 00:29:41,162
+Because you know
+what happens when we marry?
+
+379
+00:29:41,230 --> 00:29:43,431
+We say our vows in front
+of the high septon.
+
+380
+00:29:43,466 --> 00:29:45,266
+And after the ceremony,
+there's a feast.
+
+381
+00:29:45,301 --> 00:29:47,735
+When we marry,
+I become yours.
+
+382
+00:29:47,770 --> 00:29:49,337
+Forever.
+
+383
+00:29:52,108 --> 00:29:53,842
+It's getting late.
+
+384
+00:29:55,644 --> 00:29:57,278
+I should go.
+
+385
+00:29:58,314 --> 00:29:59,914
+May I come and visit
+you again?
+
+386
+00:30:02,051 --> 00:30:04,886
+All right, then.
+
+387
+00:30:09,658 --> 00:30:11,426
+Remember,
+
+388
+00:30:11,460 --> 00:30:15,096
+our little secret.
+
+389
+00:30:52,034 --> 00:30:53,668
+<i>"Ser Jaime Lannister.</i>
+
+390
+00:30:53,702 --> 00:30:57,472
+<i>Knighted and named</i>
+<i>to the Kingsguard in his 16th year.</i>
+
+391
+00:30:57,506 --> 00:31:00,008
+At the sack
+of King's Landing,
+
+392
+00:31:00,042 --> 00:31:02,443
+murdered his king
+Aerys II.
+
+393
+00:31:02,478 --> 00:31:05,680
+Pardoned by
+Robert Baratheon.
+
+394
+00:31:06,982 --> 00:31:08,950
+Thereafter known
+as the Kingslayer."
+
+395
+00:31:08,984 --> 00:31:12,287
+It's the duty of the Lord Commander
+to fill those pages.
+
+396
+00:31:15,457 --> 00:31:18,259
+And there's still room
+left on mine.
+
+397
+00:31:48,457 --> 00:31:50,892
+Valyrian steel.
+
+398
+00:31:50,960 --> 00:31:53,394
+Mmm.
+
+399
+00:31:53,429 --> 00:31:54,729
+It's yours.
+
+400
+00:31:54,763 --> 00:31:56,397
+I can't accept this.
+
+401
+00:31:56,432 --> 00:31:58,733
+It was reforged
+from Ned Stark's sword.
+
+402
+00:31:58,767 --> 00:32:01,869
+You'll use it to defend
+Ned Stark's daughter.
+
+403
+00:32:03,472 --> 00:32:07,442
+You swore an oath to return the
+Stark girls to their mother.
+
+404
+00:32:07,476 --> 00:32:09,844
+Lady Stark's dead.
+
+405
+00:32:09,878 --> 00:32:11,813
+Arya's probably
+dead, too,
+
+406
+00:32:11,847 --> 00:32:15,016
+but there's still a chance to find Sansa
+and get her somewhere safe.
+
+407
+00:32:16,318 --> 00:32:17,986
+I've got something
+else for you.
+
+408
+00:32:36,639 --> 00:32:39,140
+<i>I hope I got</i>
+<i>your measurements right.</i>
+
+409
+00:32:41,777 --> 00:32:43,444
+I'll find her.
+
+410
+00:32:45,114 --> 00:32:48,249
+For Lady Catelyn.
+
+411
+00:32:51,253 --> 00:32:52,954
+And for you.
+
+412
+00:32:59,862 --> 00:33:01,996
+I almost forgot.
+
+413
+00:33:02,965 --> 00:33:05,133
+I have one more gift.
+
+414
+00:33:08,971 --> 00:33:10,838
+I don't need a squire.
+
+415
+00:33:10,873 --> 00:33:12,774
+Of course you do.
+
+416
+00:33:12,808 --> 00:33:14,409
+He'll slow me down.
+
+417
+00:33:14,443 --> 00:33:16,778
+My brother owes him a debt.
+He's not safe here.
+
+418
+00:33:16,812 --> 00:33:19,347
+You're keeping him from harm.
+It's chivalry.
+
+419
+00:33:19,381 --> 00:33:22,417
+I won't
+slow you down, ser--
+
+420
+00:33:23,919 --> 00:33:25,887
+my lady.
+
+421
+00:33:25,921 --> 00:33:28,389
+<i>I promise</i>
+<i>I'll serve you well.</i>
+
+422
+00:33:28,424 --> 00:33:31,726
+See? He's a good lad.
+You'll get along.
+
+423
+00:33:35,831 --> 00:33:38,232
+Compliments of Lord Tyrion.
+
+424
+00:33:38,267 --> 00:33:41,269
+His axe from the Blackwater.
+
+425
+00:33:46,375 --> 00:33:48,443
+What are you
+waiting for, a kiss?
+
+426
+00:33:50,145 --> 00:33:52,380
+Ready the lady's horse.
+
+427
+00:34:01,690 --> 00:34:04,125
+They say the best swords
+have names.
+
+428
+00:34:04,159 --> 00:34:05,593
+Any ideas?
+
+429
+00:34:11,467 --> 00:34:13,434
+Oathkeeper.
+
+430
+00:34:25,147 --> 00:34:26,814
+Good-bye, Brienne.
+
+431
+00:34:50,339 --> 00:34:52,740
+Come on, move.
+
+432
+00:35:17,099 --> 00:35:19,467
+I should never
+have taken her away.
+
+433
+00:35:19,501 --> 00:35:22,637
+- She wasn't safe here.
+- She's not safe out there.
+
+434
+00:35:22,671 --> 00:35:24,505
+I should have known.
+
+435
+00:35:24,540 --> 00:35:26,707
+You told us there were
+wildlings south of the Wall.
+
+436
+00:35:26,742 --> 00:35:29,510
+<i>If they're raiding the smaller villages,</i>
+<i>Mole's Town could be next.</i>
+
+437
+00:35:29,545 --> 00:35:32,914
+- Castle Black could be next.
+- I should go back for Gilly.
+
+438
+00:35:32,948 --> 00:35:34,549
+We have orders.
+No one's to leave the castle.
+
+439
+00:35:34,583 --> 00:35:37,084
+I remember when you disobeyed orders
+and rode south to help Robb.
+
+440
+00:35:37,119 --> 00:35:39,320
+And I remember who came after me
+and brought me home.
+
+441
+00:35:41,924 --> 00:35:44,792
+I know how hard
+it is, Sam, believe me.
+
+442
+00:35:46,929 --> 00:35:49,664
+When you told me about Bran
+going beyond the Wall,
+
+443
+00:35:49,698 --> 00:35:51,621
+all I could think about
+was getting my strength back
+
+444
+00:35:51,646 --> 00:35:53,292
+so I could go and find him.
+
+445
+00:35:54,470 --> 00:35:56,938
+I wish I could have convinced
+him to come back with me.
+
+446
+00:35:58,574 --> 00:36:01,242
+I tried.
+Really, I did.
+
+447
+00:36:03,545 --> 00:36:05,813
+How fast could they travel?
+
+448
+00:36:05,848 --> 00:36:09,317
+A crippled boy being pulled
+on a sledge by a simpleton?
+
+449
+00:36:09,351 --> 00:36:10,885
+I don't know.
+
+450
+00:36:10,919 --> 00:36:13,154
+They'd pass
+wildling villages.
+
+451
+00:36:13,188 --> 00:36:16,224
+They could try to find
+shelter at one of them.
+
+452
+00:36:17,759 --> 00:36:20,461
+The wildlings
+have joined up with Mance.
+
+453
+00:36:20,496 --> 00:36:23,798
+Every village or sheltered place
+will be deserted.
+
+454
+00:36:27,269 --> 00:36:29,237
+Except...
+
+455
+00:36:32,474 --> 00:36:34,809
+<i>Craster's?</i>
+
+456
+00:36:34,843 --> 00:36:37,278
+You think Bran
+might have found--
+
+457
+00:36:37,312 --> 00:36:39,747
+Snow.
+
+458
+00:36:39,781 --> 00:36:41,415
+I don't mean
+to interrupt.
+
+459
+00:36:41,450 --> 00:36:44,118
+Thorne wants to see you.
+
+460
+00:36:46,989 --> 00:36:50,258
+Your foray
+to Craster's Keep,
+
+461
+00:36:50,292 --> 00:36:52,360
+I'll sanction it.
+
+462
+00:36:52,394 --> 00:36:56,264
+But I won't order
+anyone to go with you.
+
+463
+00:36:56,331 --> 00:36:58,966
+Volunteers only.
+
+464
+00:36:59,001 --> 00:37:01,168
+Thank you, Ser Alliser.
+
+465
+00:37:11,313 --> 00:37:13,648
+Ahem, brothers.
+
+466
+00:37:25,160 --> 00:37:27,662
+I'm going beyond the Wall
+to Craster's Keep.
+
+467
+00:37:27,696 --> 00:37:32,066
+I'm going to capture the mutineers
+holed up there or kill them.
+
+468
+00:37:32,100 --> 00:37:35,202
+<i>I'm asking for volunteers</i>
+<i>to come with me.</i>
+
+469
+00:37:36,872 --> 00:37:39,540
+There's 60 miles of wilderness
+between here and Craster's
+
+470
+00:37:39,575 --> 00:37:42,376
+and Mance Rayder has an army
+bearing down on us,
+
+471
+00:37:42,411 --> 00:37:44,478
+but we have to do this.
+
+472
+00:37:44,513 --> 00:37:47,782
+<i>Our survival</i>
+<i>may depend on</i>
+
+473
+00:37:47,816 --> 00:37:50,651
+<i>us getting to these mutineers</i>
+<i>before Mance does.</i>
+
+474
+00:37:50,686 --> 00:37:54,355
+They know the Wall.
+They know our defenses.
+
+475
+00:37:54,389 --> 00:37:57,391
+If Mance learns what
+they know, we're lost.
+
+476
+00:37:59,828 --> 00:38:02,163
+But if that's not enough,
+
+477
+00:38:02,197 --> 00:38:04,665
+then consider this.
+
+478
+00:38:04,700 --> 00:38:07,034
+If the Night's Watch
+are truly brothers,
+
+479
+00:38:07,069 --> 00:38:10,037
+then Lord Commander Mormont
+was our father.
+
+480
+00:38:11,306 --> 00:38:13,407
+He lived and died
+for the Watch
+
+481
+00:38:13,442 --> 00:38:15,910
+and he was betrayed
+by his own men.
+
+482
+00:38:15,978 --> 00:38:17,645
+Stabbed in the back
+by cowards.
+
+483
+00:38:17,679 --> 00:38:19,614
+He deserved far better.
+
+484
+00:38:19,648 --> 00:38:23,184
+All we can give him now
+is justice.
+
+485
+00:38:24,586 --> 00:38:26,487
+Who will join me?
+
+486
+00:39:16,138 --> 00:39:18,739
+I can't let a recruit
+come north of the Wall.
+
+487
+00:39:18,774 --> 00:39:21,042
+Then let me say my vows.
+
+488
+00:39:21,076 --> 00:39:22,437
+If it's a fight you're
+heading for,
+
+489
+00:39:22,440 --> 00:39:24,440
+then you need men
+who know how.
+
+490
+00:39:36,792 --> 00:39:38,659
+Thank you, brothers.
+
+491
+00:39:46,368 --> 00:39:48,436
+<i>No, don't.</i>
+
+492
+00:39:48,470 --> 00:39:51,238
+<i>Don't, please.</i>
+
+493
+00:39:51,273 --> 00:39:53,374
+<i>Please don't. Ow!</i>
+
+494
+00:39:53,408 --> 00:39:55,342
+<i>You're hurting me.</i>
+
+495
+00:40:01,016 --> 00:40:04,952
+Karl Tanner
+from Gin Alley
+
+496
+00:40:04,986 --> 00:40:08,122
+drinking wine
+from the skull
+
+497
+00:40:08,156 --> 00:40:11,625
+of Jeor fucking Mormont.
+
+498
+00:40:17,833 --> 00:40:21,969
+Any command for us,
+Lord Commander?
+
+499
+00:40:22,037 --> 00:40:24,572
+What's that?
+
+500
+00:40:24,606 --> 00:40:27,041
+Fuck 'em
+till they're dead?
+
+501
+00:40:27,075 --> 00:40:30,611
+<i>Did you hear that, boys?</i>
+
+502
+00:40:30,645 --> 00:40:33,280
+Fuck 'em
+till they're dead.
+
+503
+00:40:39,855 --> 00:40:41,222
+Rast.
+
+504
+00:40:46,695 --> 00:40:48,963
+Go outside
+and feed the beast.
+
+505
+00:40:48,997 --> 00:40:51,332
+We should kill that thing.
+
+506
+00:40:52,467 --> 00:40:55,336
+You should shut
+your fucking hole,
+
+507
+00:40:55,370 --> 00:40:58,372
+ugly little cunt.
+
+508
+00:40:58,406 --> 00:41:01,809
+You look like
+a fucking ballsack.
+
+509
+00:41:01,843 --> 00:41:04,612
+Ugly. Look at your
+stupid cunt face.
+
+510
+00:41:04,646 --> 00:41:08,215
+I could piss in any gutter
+and soak five of you.
+
+511
+00:41:09,985 --> 00:41:13,621
+Know how much they paid me to kill
+a man in King's Landing?
+
+512
+00:41:13,655 --> 00:41:16,257
+Seven silvers.
+
+513
+00:41:16,291 --> 00:41:20,027
+They told me a man's name
+and that man never saw daylight again.
+
+514
+00:41:20,061 --> 00:41:22,830
+None of them cocksuckers
+got away from me.
+
+515
+00:41:26,735 --> 00:41:29,436
+Haven't lost a fight
+since I was nine.
+
+516
+00:41:31,173 --> 00:41:33,307
+Maybe it's time.
+
+517
+00:41:33,341 --> 00:41:36,076
+What do you think, eh?
+
+518
+00:41:36,111 --> 00:41:39,180
+Maybe you're the man.
+
+519
+00:41:39,214 --> 00:41:42,349
+Eh, cunt?
+
+520
+00:41:44,619 --> 00:41:47,087
+I wouldn't stand a chance.
+
+521
+00:41:47,956 --> 00:41:49,156
+None of us would.
+
+522
+00:41:49,191 --> 00:41:52,226
+I was a fucking legend
+in Gin Alley.
+
+523
+00:41:52,260 --> 00:41:55,362
+A fucking legend!
+
+524
+00:41:55,397 --> 00:41:56,997
+I would take any knight--
+
+525
+00:41:57,032 --> 00:41:59,767
+any knight, any time.
+
+526
+00:41:59,801 --> 00:42:03,470
+Fucking cunts in steel plate.
+Fucking cowards.
+
+527
+00:42:11,913 --> 00:42:15,482
+- A gift for the gods.
+- A gift for the gods.
+
+528
+00:42:15,517 --> 00:42:17,084
+A gift for the gods.
+
+529
+00:42:17,118 --> 00:42:18,652
+What the fuck is that?
+
+530
+00:42:18,687 --> 00:42:21,856
+Craster's last child.
+A boy.
+
+531
+00:42:21,890 --> 00:42:23,424
+What am I supposed
+to do with him?
+
+532
+00:42:23,458 --> 00:42:26,293
+What did Craster
+do with 'em?
+
+533
+00:42:26,328 --> 00:42:29,530
+Kill 'em before they could grow up
+and do the same to him?
+
+534
+00:42:30,899 --> 00:42:32,600
+All right.
+
+535
+00:42:36,037 --> 00:42:37,671
+Don't need another
+mouth to feed.
+
+536
+00:42:37,706 --> 00:42:40,908
+- Hand him over.
+- He didn't kill them.
+
+537
+00:42:40,942 --> 00:42:43,644
+- He offered them.
+- To who?
+
+538
+00:42:43,678 --> 00:42:45,846
+To the gods.
+
+539
+00:42:45,881 --> 00:42:48,148
+The white walkers.
+
+540
+00:42:48,183 --> 00:42:50,217
+A gift for the gods.
+A gift for the gods.
+
+541
+00:42:50,252 --> 00:42:53,087
+A gift for the gods.
+A gift for the gods.
+
+542
+00:42:53,121 --> 00:42:55,623
+A gift for the gods.
+A gift for the gods.
+
+543
+00:42:55,657 --> 00:42:57,358
+Shut up!
+
+544
+00:43:03,431 --> 00:43:05,499
+So...
+
+545
+00:43:07,969 --> 00:43:10,504
+if it worked for him...
+
+546
+00:43:12,207 --> 00:43:14,875
+Let's give the walkers
+what they want.
+
+547
+00:43:22,183 --> 00:43:24,451
+Rast is headed that way.
+
+548
+00:44:51,539 --> 00:44:53,674
+Pink-eyed fuck.
+
+549
+00:44:57,012 --> 00:44:59,213
+You thirsty?
+
+550
+00:45:18,566 --> 00:45:20,934
+Fuck!
+
+551
+00:45:54,536 --> 00:45:56,570
+Hodor.
+
+552
+00:46:02,377 --> 00:46:03,911
+Do you hear that?
+
+553
+00:46:10,351 --> 00:46:12,119
+Is that a baby?
+
+554
+00:46:12,153 --> 00:46:14,721
+It's coming.
+
+555
+00:46:14,756 --> 00:46:16,490
+I'm going out there.
+
+556
+00:46:16,524 --> 00:46:18,625
+No, we need
+to stay together.
+
+557
+00:46:18,660 --> 00:46:20,527
+I'm going.
+
+558
+00:47:01,569 --> 00:47:04,538
+- Bran. Bran.
+- Hodor. Hodor.
+
+559
+00:47:04,572 --> 00:47:06,206
+- Hodor.
+- Bran, what happened?
+
+560
+00:47:06,241 --> 00:47:08,942
+Summer, he's hurt.
+They've caught him in a trap.
+
+561
+00:47:08,977 --> 00:47:10,344
+Who?
+
+562
+00:47:10,378 --> 00:47:13,046
+I didn't see, but they
+have my brother's wolf.
+
+563
+00:47:14,682 --> 00:47:16,884
+They have Ghost.
+
+564
+00:47:22,257 --> 00:47:23,857
+<i>They're Night's Watch.</i>
+
+565
+00:47:23,892 --> 00:47:25,993
+Look.
+
+566
+00:47:26,027 --> 00:47:28,462
+<i>Jon might be here.</i>
+
+567
+00:47:28,496 --> 00:47:31,832
+If Jon was here, why would
+they put his wolf in a cage?
+
+568
+00:47:38,139 --> 00:47:40,407
+They might have been
+Night's Watch once, not anymore.
+
+569
+00:47:40,441 --> 00:47:42,276
+We're not safe here.
+We need to go.
+
+570
+00:47:42,310 --> 00:47:43,810
+No.
+
+571
+00:47:43,845 --> 00:47:46,180
+Bran, we need to go now.
+
+572
+00:47:46,214 --> 00:47:48,081
+I'm not leaving
+without Summer.
+
+573
+00:47:54,923 --> 00:47:56,590
+Can you remember
+where the cage was?
+
+574
+00:47:56,624 --> 00:47:59,193
+The east side
+of the keep.
+
+575
+00:48:01,563 --> 00:48:04,631
+If I'm not back
+soon, we'll meet--
+
+576
+00:48:04,666 --> 00:48:06,500
+Hodor.
+
+577
+00:48:20,114 --> 00:48:21,848
+Hodor.
+
+578
+00:48:24,819 --> 00:48:26,553
+Hodor.
+Hodor.
+
+579
+00:48:29,757 --> 00:48:32,626
+Hodor.
+
+580
+00:48:32,660 --> 00:48:35,896
+If I was your size,
+I'd be king of the fucking world.
+
+581
+00:48:47,575 --> 00:48:49,576
+Help him up.
+
+582
+00:49:12,200 --> 00:49:14,001
+This is nice.
+
+583
+00:49:15,436 --> 00:49:17,838
+Fine leather.
+
+584
+00:49:19,207 --> 00:49:21,275
+You're no wildling.
+
+585
+00:49:21,309 --> 00:49:23,810
+Important. Highborn.
+
+586
+00:49:26,014 --> 00:49:28,181
+Who are you?
+
+587
+00:49:37,525 --> 00:49:39,192
+You see,
+where I come from,
+
+588
+00:49:39,227 --> 00:49:41,762
+a commoner like me slaps
+a little lord like you,
+
+589
+00:49:41,796 --> 00:49:44,031
+I'd lose my right hand.
+
+590
+00:49:44,065 --> 00:49:48,101
+But we're a long way
+from home, aren't we?
+
+591
+00:49:49,537 --> 00:49:51,571
+And the two of you,
+
+592
+00:49:51,606 --> 00:49:55,175
+fancy-looking folks
+north of the Wall
+
+593
+00:49:55,209 --> 00:49:57,444
+creeping through
+the woods.
+
+594
+00:49:58,780 --> 00:50:01,081
+Isn't that a bit odd?
+
+595
+00:50:04,485 --> 00:50:06,753
+I like your curly hair.
+
+596
+00:50:08,556 --> 00:50:11,758
+My mom had curls
+like that.
+
+597
+00:50:11,793 --> 00:50:14,761
+Beautiful brown curls.
+
+598
+00:50:16,164 --> 00:50:19,333
+Why'd you drag a crippled
+boy all the way up here?
+
+599
+00:50:24,739 --> 00:50:28,308
+See you haven't played
+this game before.
+
+600
+00:50:28,343 --> 00:50:30,644
+A highborn hostage,
+
+601
+00:50:30,678 --> 00:50:33,547
+<i>that's valuable.</i>
+
+602
+00:50:33,581 --> 00:50:36,016
+But three of them,
+
+603
+00:50:36,050 --> 00:50:39,052
+that's a lot
+of mouths to feed.
+
+604
+00:50:40,521 --> 00:50:41,798
+<i>What the fuck's</i>
+<i>wrong with him?</i>
+
+605
+00:50:41,823 --> 00:50:42,422
+Come here.
+
+606
+00:50:42,423 --> 00:50:44,424
+No, please.
+
+607
+00:50:44,459 --> 00:50:45,859
+Please.
+Please, let me help him.
+
+608
+00:50:45,893 --> 00:50:47,794
+- Who are you? - Pleas.
+
+609
+00:50:47,829 --> 00:50:51,164
+- Who are you?
+- I'm Brandon Stark!
+
+610
+00:50:51,199 --> 00:50:53,800
+I'm Brandon Stark
+of Winterfell.
+
+611
+00:50:56,204 --> 00:50:58,772
+It's Jon Snow's brother.
+
+612
+00:51:00,375 --> 00:51:02,676
+It's Meera. It's Meera.
+I'm right here.
+
+613
+00:51:02,710 --> 00:51:07,414
+And I thought this
+was gonna be another boring day.
+
+614
+00:51:12,420 --> 00:51:14,354
+<i>I'm right here.</i>
+
+
