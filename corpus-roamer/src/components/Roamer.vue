@@ -1,7 +1,7 @@
 <template>
   <div class="hello" onblur="window.focus();">
     <div style="position: absolute; left: 50%; width:100%; height:150%;">
-      <!-- <iframe :src="iframe_src" class="word-image" frameborder="0" allowtransparency="true"></iframe> -->
+      <iframe :src="iframe_src" class="word-image" frameborder="0" allowtransparency="true"></iframe>
     </div>
     <!-- <h3>{{msg}}</h3> -->
     <!-- <p>
@@ -16,7 +16,7 @@
       <button @click="speakPi(cursor, isSpeaking)">{{ isSpeaking ? 'Shut up' : 'Say pi' }}</button>
       <input type="text" v-model="search" placeholder="search" @change="searchWord()" />
     </div>
-    <span v-if="true" class="cursor" id="current-index-of-the-roamer">{{ parseInt(cursor) + 1 }}</span>
+    <span v-if="false" class="cursor" id="current-index-of-the-roamer">{{ parseInt(cursor) + 1 }}</span>
     <ul>
       <li v-for="(w,i) in word_list" :key="i" :id="`word-list-${i}`">
         <div id="word-list">
@@ -188,7 +188,7 @@
 
 <script>
 // import PI from "../assets/pi-digit.json";
-import WL from "../assets/zh_freq_tran.json";
+import WL from "../assets/word_list_funny.json";
 import STEM from "../assets/word_stems_zh.json";
 import TRAN from "../assets/word_list_tran.json";
 
@@ -206,7 +206,7 @@ export default {
       translation: TRAN,
       c_offset: 0,
       WL_size: 41295,
-      cursor: 0,
+      cursor: 7,
       speakMsg: new SpeechSynthesisUtterance(),
       autoScroll: null,
       isSpeaking: false,
@@ -351,53 +351,84 @@ export default {
 
       setTimeout(() => {
         document.getElementById("word-list-0").classList.remove("hide");
-        this.speakMsg.voice = speechSynthesis.getVoices()[19]; // WinChrome zhFemale
-        const word = this.wl[index].word || this.wl[index];
-
+        const word = this.wl[index].word || this.wl[index] || " ";
         // The value associated with the key. i.e. direct translation of the word
-        const value = this.wl[index].value;
-
+        const value = ''// this.wl[index].value;
         this.speakMsg.text = word;
-        this.speakMsg.rate = 1;
-        speechSynthesis.speak(this.speakMsg);
+        this.speakMsg.rate = 1.25;
 
-        this.speakMsg.onend = () => {
-          if (this.word_stem[stem]) {
-            this.speakMsg.voice = speechSynthesis.getVoices()[1]; // WinChrome enFemale
-            this.speakMsg.text =
-              !!this.translation[word] && !!this.translation[word]["us"]
-                ? this.translation[word]["us"]
-                : "";
-            this.speakMsg.text = this.word_stem[stem].reduce((acc, mor) => {
-              return acc + Object.keys(mor)[0] + ", ,";
-            }, ", ");
+        const isSpeakInMultipleAccent = true;
+        const accents = [
+          31, // enGB-F
+          16, // enGB-M
+          30, // enAU-F
+          35, // enAU-M
+          52, // enUS-F
+          0,  // enUS-M
+          // 55,
+          // 47,
+          // 57,
+          // 20,
+          // 61,
+          // 73,
+          // 74,
+          // 75,
+        ];
 
+        const speakInAccent = i => {
+          if (i <= accents.length - 1) {
+            this.speakMsg.voice = speechSynthesis.getVoices()[accents[i]]; // MacChrome enUS Female
             speechSynthesis.speak(this.speakMsg);
 
             this.speakMsg.onend = () => {
-              setTimeout(() => {
-                this.speakStemWords(+index + 1, !this.isSpeaking);
-
-                // wait depend on the number of stems
-              }, 200 + (this.word_stem[stem] ? this.word_stem[stem].length : 0 || 0) * 200);
+              speakInAccent(i + 1);
             };
-          } else if (value) {
-            this.speakMsg.voice = speechSynthesis.getVoices()[0]; //WinChrome enMale
-            this.speakMsg.text = value;
-            this.speakMsg.rate = 2;
-            speechSynthesis.speak(this.speakMsg);
+          } else {
+              this.speakStemWords(+index + 1, !this.isSpeaking);
+          }
+        };
 
-            this.speakMsg.onend = () => {
+        if (isSpeakInMultipleAccent) {
+          speakInAccent(0);
+        } else {
+          this.speakMsg.onend = () => {
+            if (this.word_stem[stem]) {
+              this.speakMsg.voice = speechSynthesis.getVoices()[74]; // MacChrome enUS Female
+              this.speakMsg.text =
+                !!this.translation[word] && !!this.translation[word]["us"]
+                  ? this.translation[word]["us"]
+                  : "";
+              this.speakMsg.text = this.word_stem[stem].reduce((acc, mor) => {
+                return acc + Object.keys(mor)[0] + ", ,";
+              }, ", ");
+
+              speechSynthesis.speak(this.speakMsg);
+
+              this.speakMsg.onend = () => {
+                setTimeout(() => {
+                  this.speakStemWords(+index + 1, !this.isSpeaking);
+
+                  // wait depend on the number of stems
+                }, 200 + (this.word_stem[stem] ? this.word_stem[stem].length : 0 || 0) * 200);
+              };
+            } else if (value) {
+              this.speakMsg.voice = speechSynthesis.getVoices()[0]; //WinChrome enMale
+              this.speakMsg.text = value;
+              this.speakMsg.rate = 2;
+              speechSynthesis.speak(this.speakMsg);
+
+              this.speakMsg.onend = () => {
+                setTimeout(() => {
+                  this.speakStemWords(+index + 1, !this.isSpeaking);
+                }, 20);
+              };
+            } else {
               setTimeout(() => {
                 this.speakStemWords(+index + 1, !this.isSpeaking);
               }, 20);
-            };
-          } else {
-            setTimeout(() => {
-              this.speakStemWords(+index + 1, !this.isSpeaking);
-            }, 20);
-          }
-        };
+            }
+          };
+        }
       }, 100);
     },
 
@@ -481,7 +512,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 li {
   display: inline-block;
@@ -519,7 +550,7 @@ a {
 .current-cursor {
   /* color: #ef9a9a; */
   color: #009688;
-  font-size: 800%;
+  font-size: 500%;
   font-weight: 700;
   font-family: "DFKai-SB", "avenir next", "avenir lt std";
   padding: 1em;

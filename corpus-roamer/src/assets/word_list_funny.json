@@ -1,0 +1,813 @@
+[
+  "",
+  "This video is created by",
+  "Thundermighty @ Bilibili",
+  "feel free to hit the ",
+  "LIKE, COIN & SHARE button!",
+  "Let's kickoff ...",
+  "",
+  {
+    "word": "legislation",
+    "value": "the act of making or enacting laws"
+  },
+  {
+    "word": "phenomenon",
+    "value": "any state or process known through the senses"
+  },
+  {
+    "word": "helicopter",
+    "value": "an aircraft without wings that obtains its lift from the rotation of overhead blades"
+  },
+  {
+    "word": "hypothesis",
+    "value": "a tentative insight that is not yet verified or tested"
+  },
+  {
+    "word": "facilitate",
+    "value": "make easier"
+  },
+  {
+    "word": "bubble",
+    "value": "a hollow globule of gas (e.g., air or carbon dioxide)"
+  },
+  {
+    "word": "paradigm",
+    "value": "a standard or typical example"
+  },
+  {
+    "word": "eclipse",
+    "value": "the phenomenon when one celestial body obscures another"
+  },
+  {
+    "word": "celestial",
+    "value": "relating to or inhabiting a divine heaven"
+  },
+  {
+    "word": "pneumonia",
+    "value": "respiratory disease characterized by lung inflammation"
+  },
+  {
+    "word": "parachute",
+    "value": "cloth canopy that fills with air to slow a fall"
+  },
+  {
+    "word": "ubiquitous",
+    "value": "being present everywhere at once"
+  },
+  {
+    "word": "bibliography",
+    "value": "a list of writings with time and place of publication"
+  },
+  {
+    "word": "slippery",
+    "value": "causing or tending to cause things to slip or slide"
+  },
+  {
+    "word": "intermittent",
+    "value": "stopping and starting at irregular intervals"
+  },
+  {
+    "word": "placebo",
+    "value": "an innocuous or inert medication"
+  },
+  {
+    "word": "turbulence",
+    "value": "instability in the atmosphere"
+  },
+  {
+    "word": "homogeneous",
+    "value": "all of the same or similar kind or nature"
+  },
+  {
+    "word": "perpendicular",
+    "value": "intersecting at or forming right angles"
+  },
+  {
+    "word": "ingenuity",
+    "value": "the power of creative imagination"
+  },
+  {
+    "word": "nomenclature",
+    "value": "a system of words used to name things in a discipline"
+  },
+  {
+    "word": "plethora",
+    "value": "extreme excess"
+  },
+  {
+    "word": "ephemeral",
+    "value": "anything short-lived, as an insect that lives only for a day"
+  },
+  {
+    "word": "quintessential",
+    "value": "representing the perfect example of a class or quality"
+  },
+  {
+    "word": "algebraic",
+    "value": "of or relating to algebra"
+  },
+  {
+    "word": "ludicrous",
+    "value": "inviting ridicule"
+  },
+  {
+    "word": "purportedly",
+    "value": "believed or reputed to be the case"
+  },
+  {
+    "word": "camaraderie",
+    "value": "the quality of affording easy familiarity and sociability"
+  },
+  {
+    "word": "alfalfa",
+    "value": "plant with trifoliate leaves mostly grown to feed livestock"
+  },
+  {
+    "word": "virulent",
+    "value": "extremely poisonous or injurious; producing venom"
+  },
+  {
+    "word": "filibuster",
+    "value": "a tactic for delaying legislation by making long speeches"
+  },
+  {
+    "word": "vendetta",
+    "value": "a blood feud between members of opposing parties"
+  },
+  {
+    "word": "epistemology",
+    "value": "the philosophical theory of knowledge"
+  },
+  {
+    "word": "paraphernalia",
+    "value": "equipment consisting of miscellaneous articles"
+  },
+  {
+    "word": "narcissistic",
+    "value": "having an inflated idea of one's own importance"
+  },
+  {
+    "word": "impervious",
+    "value": "not admitting of passage or capable of being affected"
+  },
+  {
+    "word": "preposterous",
+    "value": "inviting ridicule"
+  },
+  {
+    "word": "quagmire",
+    "value": "a soft wet area of low-lying land that sinks underfoot"
+  },
+  {
+    "word": "didactic",
+    "value": "instructive, especially excessively"
+  },
+  {
+    "word": "harbinger",
+    "value": "something indicating the approach of something or someone"
+  },
+  {
+    "word": "anthropomorphic",
+    "value": "suggesting human features for animals or inanimate things"
+  },
+  {
+    "word": "haphazard",
+    "value": "dependent upon or characterized by chance"
+  },
+  {
+    "word": "apprehend",
+    "value": "anticipate with dread or anxiety"
+  },
+  {
+    "word": "asynchronous",
+    "value": "not occurring or existing at the same time"
+  },
+  {
+    "word": "heuristic",
+    "value": "a commonsense rule to help solve some problem"
+  },
+  {
+    "word": "juggernaut",
+    "value": "a massive inexorable force"
+  },
+  {
+    "word": "mnemonic",
+    "value": "of or relating to the practice of aiding the memory"
+  },
+  {
+    "word": "chlorophyll",
+    "value": "any of green pigments found in photosynthetic organisms"
+  },
+  {
+    "word": "capricious",
+    "value": "determined by chance or impulse rather than by necessity"
+  },
+  {
+    "word": "slapstick",
+    "value": "a type of comedy characterized by pranks and physical humor"
+  },
+  {
+    "word": "conundrum",
+    "value": "a difficult problem"
+  },
+  {
+    "word": "lollipop",
+    "value": "hard candy on a stick"
+  },
+  {
+    "word": "wannabe",
+    "value": "an ambitious and aspiring young person"
+  },
+  {
+    "word": "bumblebee",
+    "value": "robust hairy social bee of temperate regions"
+  },
+  {
+    "word": "implacable",
+    "value": "incapable of being appeased or pacified"
+  },
+  {
+    "word": "apocryphal",
+    "value": "being of questionable authenticity"
+  },
+  {
+    "word": "catharsis",
+    "value": "purging the body to stimulate evacuation of the bowels"
+  },
+  {
+    "word": "benediction",
+    "value": "a ceremonial prayer invoking divine protection"
+  },
+  {
+    "word": "annihilate",
+    "value": "kill in large numbers"
+  },
+  {
+    "word": "gargantuan",
+    "value": "of great mass; huge and bulky"
+  },
+  {
+    "word": "omnipotent",
+    "value": "having unlimited power"
+  },
+  {
+    "word": "couscous",
+    "value": "a northern African pasta made of crushed semolina"
+  },
+  {
+    "word": "oligarchy",
+    "value": "a political system governed by a few people"
+  },
+  {
+    "word": "anachronism",
+    "value": "locating something at a time when it couldn't have existed"
+  },
+  {
+    "word": "parallelism",
+    "value": "similarity by virtue of corresponding"
+  },
+  {
+    "word": "cataclysm",
+    "value": "a sudden violent change in the earth's surface"
+  },
+  {
+    "word": "stiletto",
+    "value": "a small dagger with a tapered blade"
+  },
+  {
+    "word": "serendipity",
+    "value": "good luck in making unexpected and fortunate discoveries"
+  },
+  {
+    "word": "inscrutable",
+    "value": "difficult or impossible to understand"
+  },
+  {
+    "word": "ramshackle",
+    "value": "in deplorable condition"
+  },
+  {
+    "word": "cormorant",
+    "value": "large, dark-colored, long-necked seabird"
+  },
+  {
+    "word": "hippopotamus",
+    "value": "massive thick-skinned herbivorous animal living in or around rivers of tropical Africa"
+  },
+  {
+    "word": "fastidious",
+    "value": "giving careful attention to detail"
+  },
+  {
+    "word": "necromancer",
+    "value": "one who practices magic or sorcery"
+  },
+  {
+    "word": "vociferous",
+    "value": "conspicuously and offensively loud"
+  },
+  {
+    "word": "bombastic",
+    "value": "ostentatiously lofty in style"
+  },
+  {
+    "word": "cantankerous",
+    "value": "stubbornly obstructive and unwilling to cooperate"
+  },
+  {
+    "word": "dreadnought",
+    "value": "battleship that has big guns all of the same caliber"
+  },
+  {
+    "word": "algorithmic",
+    "value": "of or relating to or having the characteristics of an algorithm"
+  },
+  {
+    "word": "repudiate",
+    "value": "refuse to acknowledge, ratify, or recognize as valid"
+  },
+  {
+    "word": "sobriquet",
+    "value": "a familiar name for a person"
+  },
+  {
+    "word": "doldrums",
+    "value": "a belt of calms between the Atlantic and Pacific trade winds"
+  },
+  {
+    "word": "elegiac",
+    "value": "resembling or characteristic of a lament for the dead"
+  },
+  {
+    "word": "flabbergasted",
+    "value": "as if struck dumb with astonishment and surprise"
+  },
+  {
+    "word": "soliloquy",
+    "value": "speech you make to yourself"
+  },
+  {
+    "word": "laconic",
+    "value": "brief and to the point"
+  },
+  {
+    "word": "hodgepodge",
+    "value": "a motley assortment of things"
+  },
+  {
+    "word": "scrivener",
+    "value": "someone employed to make written copies of documents and manuscripts"
+  },
+  {
+    "word": "quixotic",
+    "value": "not sensible about practical matters"
+  },
+  {
+    "word": "verisimilitude",
+    "value": "the appearance of truth; the quality of seeming to be true"
+  },
+  {
+    "word": "parabola",
+    "value": "a curve formed by an object thrown in the air and falling"
+  },
+  {
+    "word": "hullabaloo",
+    "value": "disturbance usually in protest"
+  },
+  {
+    "word": "gastroenteritis",
+    "value": "inflammation of the stomach and intestines"
+  },
+  {
+    "word": "sanctimonious",
+    "value": "excessively or hypocritically pious"
+  },
+  {
+    "word": "synesthesia",
+    "value": "a sensation that occurs when a different sense is stimulated"
+  },
+  {
+    "word": "comeuppance",
+    "value": "a usually negative outcome or fate that is well deserved"
+  },
+  {
+    "word": "ellipsis",
+    "value": "omission or suppression of parts of words or sentences"
+  },
+  {
+    "word": "trenchant",
+    "value": "having keenness and forcefulness and penetration in thought"
+  },
+  {
+    "word": "omniscience",
+    "value": "the state or quality of having infinite knowledge"
+  },
+  {
+    "word": "kaleidoscopic",
+    "value": "continually shifting or rapidly changing"
+  },
+  {
+    "word": "demagogue",
+    "value": "a leader who seeks support by appealing to popular passions"
+  },
+  {
+    "word": "berserker",
+    "value": "one of the ancient Norse warriors legendary for working themselves into a frenzy before a battle and fighting with reckless savagery and insane fury"
+  },
+  {
+    "word": "duodenum",
+    "value": "the part of the small intestine between the stomach and the jejunum"
+  },
+  {
+    "word": "alacrity",
+    "value": "liveliness and eagerness"
+  },
+  {
+    "word": "homunculus",
+    "value": "a person who is tiny or diminutive"
+  },
+  {
+    "word": "luminary",
+    "value": "a celebrity who is an inspiration to others"
+  },
+  {
+    "word": "coalescence",
+    "value": "the union of diverse things into one body or form or group"
+  },
+  {
+    "word": "sibilant",
+    "value": "of speech sounds forcing air through a constricted passage"
+  },
+  {
+    "word": "avaricious",
+    "value": "immoderately desirous of acquiring something"
+  },
+  {
+    "word": "juxtapose",
+    "value": "place side by side"
+  },
+  {
+    "word": "corpulent",
+    "value": "excessively fat"
+  },
+  {
+    "word": "lackadaisical",
+    "value": "idle or indolent especially in a dreamy way"
+  },
+  {
+    "word": "quizzical",
+    "value": "perplexed"
+  },
+  {
+    "word": "lugubrious",
+    "value": "excessively mournful"
+  },
+  {
+    "word": "misanthrope",
+    "value": "someone who dislikes people in general"
+  },
+  {
+    "word": "sepulcher",
+    "value": "a chamber that is used as a grave"
+  },
+  {
+    "word": "doggerel",
+    "value": "a comic verse of irregular measure"
+  },
+  {
+    "word": "bibliophile",
+    "value": "someone who loves and usually collects books"
+  },
+  {
+    "word": "loquacious",
+    "value": "full of trivial conversation"
+  },
+  {
+    "word": "incommunicado",
+    "value": "without means, right, or desire to be in contact with others"
+  },
+  {
+    "word": "salubrious",
+    "value": "promoting health"
+  },
+  {
+    "word": "curmudgeon",
+    "value": "an irascible, cantankerous person full of stubborn ideas"
+  },
+  {
+    "word": "autodidact",
+    "value": "a person who has taught himself"
+  },
+  {
+    "word": "braggadocio",
+    "value": "vain and empty boasting"
+  },
+  {
+    "word": "haberdashery",
+    "value": "a store where clothes designed for men are sold"
+  },
+  {
+    "word": "antediluvian",
+    "value": "of or relating to the period before the biblical flood"
+  },
+  {
+    "word": "jingoism",
+    "value": "fanatical patriotism"
+  },
+  {
+    "word": "obfuscate",
+    "value": "make obscure or unclear"
+  },
+  {
+    "word": "ragamuffin",
+    "value": "a dirty shabbily clothed urchin"
+  },
+  {
+    "word": "exoteric",
+    "value": "suitable for the general public"
+  },
+  {
+    "word": "truculent",
+    "value": "defiantly aggressive"
+  },
+  {
+    "word": "usufruct",
+    "value": "a legal right to use and profit from someone else's property"
+  },
+  {
+    "word": "shibboleth",
+    "value": "a favorite saying of a sect or political group"
+  },
+  {
+    "word": "abbreviate",
+    "value": "shorten"
+  },
+  {
+    "word": "blunderbuss",
+    "value": "a short musket of wide bore with a flared muzzle"
+  },
+  {
+    "word": "emollient",
+    "value": "a substance with a soothing effect when applied to the skin"
+  },
+  {
+    "word": "ichthyologist",
+    "value": "a zoologist who studies fishes"
+  },
+  {
+    "word": "remora",
+    "value": "marine fishes with a flattened elongated body and a sucking disk on the head for attaching to large fish or moving objects"
+  },
+  {
+    "word": "cadaverous",
+    "value": "of or relating to a corpse"
+  },
+  {
+    "word": "obstreperous",
+    "value": "noisily and stubbornly defiant"
+  },
+  {
+    "word": "gerund",
+    "value": "a noun formed from a verb"
+  },
+  {
+    "word": "oubliette",
+    "value": "a dungeon with a trap door in the ceiling"
+  },
+  {
+    "word": "skullduggery",
+    "value": "verbal misrepresentation intended to take advantage of you in some way"
+  },
+  {
+    "word": "eviscerate",
+    "value": "remove the entrails of"
+  },
+  {
+    "word": "perplex",
+    "value": "be a mystery or bewildering to"
+  },
+  {
+    "word": "bacchanalian",
+    "value": "used of riotously drunken merrymaking"
+  },
+  {
+    "word": "syzygy",
+    "value": "the straight line configuration of three celestial bodies"
+  },
+  {
+    "word": "pusillanimous",
+    "value": "lacking in courage, strength, and resolution"
+  },
+  {
+    "word": "nosegay",
+    "value": "an arrangement of flowers that is usually given as a present"
+  },
+  {
+    "word": "horology",
+    "value": "the art of designing and making clocks"
+  },
+  {
+    "word": "dullard",
+    "value": "a person who is not very bright or interesting"
+  },
+  {
+    "word": "kerfuffle",
+    "value": "a disorderly outburst or tumult"
+  },
+  {
+    "word": "myrmidon",
+    "value": "a follower who carries out orders without question"
+  },
+  {
+    "word": "naysayer",
+    "value": "someone with an aggressively negative attitude"
+  },
+  {
+    "word": "lumpenproletariat",
+    "value": "(Marxism) the unorganized lower levels of the proletariat who are not interested in revolutionary advancement"
+  },
+  {
+    "word": "skedaddle",
+    "value": "run away, as if in a panic"
+  },
+  {
+    "word": "monomania",
+    "value": "an unhealthy obsession or preoccupation with one thing"
+  },
+  {
+    "word": "frippery",
+    "value": "something of little value or significance"
+  },
+  {
+    "word": "kwashiorkor",
+    "value": "severe malnutrition in children resulting from a diet excessively high in carbohydrates and low in protein"
+  },
+  {
+    "word": "googolplex",
+    "value": "a cardinal number represented as 1 followed by a googol of zeros (ten raised to the power of a googol)"
+  },
+  {
+    "word": "jejunum",
+    "value": "the part of the small intestine between the duodenum and the ileum"
+  },
+  {
+    "word": "raillery",
+    "value": "light teasing"
+  },
+  {
+    "word": "rapscallion",
+    "value": "one who is playfully mischievous"
+  },
+  {
+    "word": "mugwump",
+    "value": "a neutral or uncommitted person, especially in politics"
+  },
+  {
+    "word": "primp",
+    "value": "dress or groom with elaborate care"
+  },
+  {
+    "word": "platitudinous",
+    "value": "dull and tiresome but with pretensions of significance or originality"
+  },
+  {
+    "word": "exiguous",
+    "value": "extremely scanty"
+  },
+  {
+    "word": "gallimaufry",
+    "value": "a motley assortment of things"
+  },
+  {
+    "word": "vicissitude",
+    "value": "a variation in circumstances or fortune"
+  },
+  {
+    "word": "mizzenmast",
+    "value": "third mast from the bow in a vessel having three or more masts; the after and shorter mast of a yawl, ketch, or dandy"
+  },
+  {
+    "word": "curlicue",
+    "value": "a round shape formed by a series of concentric circles"
+  },
+  {
+    "word": "flibbertigibbet",
+    "value": "a foolish, flighty, and overly talkative person"
+  },
+  {
+    "word": "shenanigan",
+    "value": "the use of tricks to deceive someone"
+  },
+  {
+    "word": "panjandrum",
+    "value": "an important or influential (and often overbearing) person"
+  },
+  {
+    "word": "tintinnabulation",
+    "value": "the sound of a bell ringing"
+  },
+  {
+    "word": "rigamarole",
+    "value": "a long, complicated, and confusing procedure"
+  },
+  {
+    "word": "tatterdemalion",
+    "value": "a dirty shabbily clothed person"
+  },
+  {
+    "word": "pulchritudinous",
+    "value": "having great physical beauty"
+  },
+  {
+    "word": "eructation",
+    "value": "a reflex that expels gas noisily from the stomach through the mouth"
+  },
+  {
+    "word": "pogonip",
+    "value": "a dense winter fog containing ice particles"
+  },
+  {
+    "word": "mealymouthed",
+    "value": "hesitant to state facts or opinions simply and directly"
+  },
+  {
+    "word": "discombobulate",
+    "value": "cause to be confused emotionally"
+  },
+  {
+    "word": "lollygag",
+    "value": "loaf about and waste time; dawdle"
+  },
+  {
+    "word": "dillydally",
+    "value": "postpone doing what one should be doing"
+  },
+  {
+    "word": "concatenate",
+    "value": "add by linking or joining so as to form a chain or series"
+  },
+  {
+    "word": "kahikatea",
+    "value": "New Zealand evergreen valued for its light easily worked wood"
+  },
+  {
+    "word": "ochlocracy",
+    "value": "a political system in which a mob is the source of control"
+  },
+  {
+    "word": "sesquipedalian",
+    "value": "a very long word (a foot and a half long)"
+  },
+  {
+    "word": "phobophobia",
+    "value": "a morbid fear of developing a phobia"
+  },
+  {
+    "word": "bardolatry",
+    "value": "the idolization of William Shakespeare"
+  },
+  {
+    "word": "nidifugous",
+    "value": "(of birds) leaving the nest shortly after hatching"
+  },
+  {
+    "word": "preponderate",
+    "value": "weigh more heavily"
+  },
+  {
+    "word": "aposiopesis",
+    "value": "breaking off in the middle of a sentence"
+  },
+  {
+    "word": "incommodious",
+    "value": "uncomfortably or inconveniently small"
+  },
+  {
+    "word": "mumpsimus",
+    "value": "a traditional notion that is obstinately held although it is unreasonable"
+  },
+  {
+    "word": "collywobbles",
+    "value": "severe gastroenteritis of unknown etiology"
+  },
+  {
+    "word": "fizgig",
+    "value": "a firework that fizzes as it moves"
+  },
+  {
+    "word": "absquatulate",
+    "value": "run away, taking something or somebody along"
+  },
+  {
+    "word": "bombilate",
+    "value": "make a buzzing sound"
+  },
+  {
+    "word": "hebdomadally",
+    "value": "without missing a week"
+  },
+  {
+    "word": "hemidemisemiquaver",
+    "value": "a musical note having the time value of a sixty-fourth of a whole note"
+  }
+]
