@@ -1,15 +1,8 @@
 <template>
   <div class="hello" onblur="window.focus();">
     <div style="position: absolute; left: 50%; width:100%; height:150%;">
-      <iframe :src="iframe_src" class="word-image" frameborder="0" allowtransparency="true"></iframe>
+      <!-- <iframe :src="iframe_src" class="word-image" frameborder="0" allowtransparency="true"></iframe> -->
     </div>
-    <!-- <h3>{{msg}}</h3> -->
-    <!-- <p>
-      Press
-      <code>J</code> and
-      <code>K</code> to go up and down; Press
-      <code>SPACE</code> to toggle auto scroll.
-    </p>-->
     <div>
       <input type="number" v-model="cursor" :max="WL_size" min="-1" step="1" />
       <button @click="speakStemWords(cursor, isSpeaking)">{{ isSpeaking ? 'Stop' : 'Start' }}</button>
@@ -232,8 +225,8 @@ export default {
       // word = this.first_morph(word);
       // word = this.word_stem[w.stem][0];
 
-      return "https://pixabay.com/en/photos/" + word;
-      // return "https://www.stockvault.net/free-photos/" + word;
+      // return "https://pixabay.com/en/photos/" + word;
+      return "https://www.stockvault.net/free-photos/" + word;
       // return "https://www.pexels.com/search/" + word;
     }
   },
@@ -355,24 +348,25 @@ export default {
         // The value associated with the key. i.e. direct translation of the word
         const value = ''// this.wl[index].value;
         this.speakMsg.text = word;
-        this.speakMsg.rate = 1.25;
+        this.speakMsg.rate = 1;
 
         const isSpeakInMultipleAccent = true;
         const accents = [
-          31, // enGB-F
-          16, // enGB-M
-          30, // enAU-F
-          35, // enAU-M
-          52, // enUS-F
-          0,  // enUS-M
-          // 55,
-          // 47,
-          // 57,
-          // 20,
-          // 61,
-          // 73,
-          // 74,
-          // 75,
+          // 31, // enGB-F
+          // 16, // enGB-M
+          // 30, // enAU-F
+          // 35, // enAU-M
+          // 52, // enUS-F
+          // 0,  // enUS-M
+          
+          // Safari
+          64, // enUS-F
+          38, // enGB-F
+          36, // enAU-F
+          // 18, // enGB-M
+          // 43, // enAU-M
+          // 2,  // enUS-M
+          
         ];
 
         const speakInAccent = i => {
