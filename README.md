@@ -4,7 +4,7 @@ Compare English corpora by measuring differences between words lists ordered by 
 
 ## Corpora
 
-- [My Twitter Curpus](https://github.com/xdqc/tweet-trends) - `twit`
+- [Twitter corpus](https://github.com/xdqc/tweet-trends) - `twit`
 
 - [Norvig Natural Language Corpus](https://github.com/colinscape/norvig-frequencies/tree/master/data) - `norv`
 
@@ -54,7 +54,7 @@ one of the results using _all-dictionary mask_ and _10000 compare size_. ![alt t
 
 ![alt text](https://raw.githubusercontent.com/xdqc/english-corpus-words-frequency/master/results/g-all-10000.PNG 'dictinary mask=dict_all, compare size=10000')
 
-`norv` and `ngra` have 99.9% words in common, and 100x similarity value to other corpora, thus can be considered the same. *Of course! https://norvig.com/ngrams/*
+`norv` and `ngra` have 99.9% words in common, and 100x similarity value to other corpora, thus can be considered the same. *Of course they are! https://norvig.com/ngrams/*
 
 ### Common words comparison
 
