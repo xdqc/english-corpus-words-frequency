@@ -1,10 +1,10 @@
 # english-corpus-words-frequency
 
-Compare various English corpus by measuring differences between words frequency lists.
+Compare English corpora by measuring differences between words lists ordered by frequency.
 
-## Corpus
+## Corpora
 
-- [My Twitter Curpus](https://github.com/xdqc/tweet-trend-everyday) - `twit`
+- [My Twitter Curpus](https://github.com/xdqc/tweet-trends) - `twit`
 
 - [Norvig Natural Language Corpus](https://github.com/colinscape/norvig-frequencies/tree/master/data) - `norv`
 
@@ -18,7 +18,7 @@ Compare various English corpus by measuring differences between words frequency 
 
 - [Open Subtitle](http://opus.nlpl.eu/index.php) - `subt`
 
-## Dictionary
+## Dictionaries
 
 - [Oxford](https://github.com/DevangMstryls/Oxford-English-Dictionary-41K-words-) `dict_oxford.txt`
 
@@ -26,27 +26,27 @@ Compare various English corpus by measuring differences between words frequency 
 
 - [English words](https://github.com/dwyl/english-words) `dict_alpha.txt`
 
-## How to compare corpus?
+## Terms
 
 #### Similarity
 
-**Similarity** of two corpus depends on _percentage of common words_ and _average word distance_ in two corpus.
+**Similarity** of two corpus depends on both of _percentage of common words_ and _average word distance_ in two corpus.
 
 #### Word distance
 
-**Distance** means how far away a word position of the frequency ranking in different corpus. Distance has sign (can be negative).
+**Distance** indicates how far away a word position of the frequency ranking in different corpus. Distance has sign (can be negative).
 
 _distance_ = _ln(indexofWordInSecondCorpus)_ - _ln(indexofWordInFirstCorpus)_
 
-#### Compare size
+#### Comparison size
 
-Two corpus are compared by same size of N most common words. Typically, most 10000 common words cover 97% of entire corpus; most 20000 common words conver more than 99% of entire corpus.
+Each of the two-corpora-pair is compared using same size of N most common words. Typically, top 10000 common words cover 97% of the entire corpus; top 20000 common words conver more than 99% of the entire corpus.
 
 #### Dictionary filter
 
-Use dictionaries as masks to mitigate criteriary differences when generating these corpus.
+Dictionaries are served as masks to inner join corpus for standarization.
 
-## Comparison
+## Comparisons
 
 ### Results
 
@@ -54,20 +54,20 @@ one of the results using _all-dictionary mask_ and _10000 compare size_. ![alt t
 
 ![alt text](https://raw.githubusercontent.com/xdqc/english-corpus-words-frequency/master/results/g-all-10000.PNG 'dictinary mask=dict_all, compare size=10000')
 
-`norv` and `ngra` have 99.9% words in common, and 100x similarity value to other corpus, thuns can be considered the same.
+`norv` and `ngra` have 99.9% words in common, and 100x similarity value to other corpora, thus can be considered the same. *Of course! https://norvig.com/ngrams/*
 
 ### Common words comparison
 
-List words with |_distance_| > `2` common in both corpus (unfiltered, 20000 size), each ordered by |_distance_|:
+Lists of words with more than doubled distances ( |_distance_| > `2` ) which are common in both corpus (unfiltered, 20000 size), ordered by |_distance_|:
 
-|          |         **coca**         |         **norv**         |         **twit**          |         **wiki**         |         **goog**         |         **subt**         |
-|----------|:------------------------:|:------------------------:|:-------------------------:|:------------------------:|:------------------------:|:------------------------:|
-| **coca** |                          |  90'-ish[#](#coca-norv)  |  00'-ish[#](#coca-twit)   | utter-ish[#](#coca-wiki) |  tv-ish[#](#coca-goog)   | polit-ish[#](#coca-subt) |
-| **norv** | [#](#coca-norv)paper-ish |                          | litera-ish[#](#norv-twit) | infer-ish[#](#norv-wiki) | ibid-ish[#](#norv-goog)  |  sci-ish[#](#norv-subt)  |
-| **twit** | [#](#coca-twit)vulg-ish  | [#](#norv-twit)play-ish  |                           | life-ish[#](#twit-wiki)  | buzz-ish[#](#twit-goog)  | news-ish[#](#twit-subt)  |
-| **wiki** |  [#](#coca-wiki)doc-ish  | [#](#norv-wiki)event-ish |  [#](#twit-wiki)note-ish  |                          | story-ish[#](#wiki-goog) | fact-ish[#](#wiki-subt)  |
-| **goog** |  [#](#coca-goog)web-ish  | [#](#norv-goog)info-ish  |  [#](#twit-goog)site-ish  | [#](#wiki-goog)sale-ish  |                          | file-ish[#](#goog-subt)  |
-| **subt** | [#](#coca-subt)tell-ish  | [#](#norv-subt)call-ish  | [#](#twit-subt)drama-ish  | [#](#wiki-subt)feel-ish  | [#](#goog-subt)chat-ish  |                          |
+|          |        **coca**         |        **norv**        |         **twit**          |         **wiki**          |       **goog**        |         **subt**          |
+|----------|:-----------------------:|:----------------------:|:-------------------------:|:-------------------------:|:---------------------:|:-------------------------:|
+| **coca** |                         |  90's[#](#coca-norv)   |    00's[#](#coca-twit)    | colloquial[#](#coca-wiki) | media[#](#coca-goog)  |  politics[#](#coca-subt)  |
+| **norv** |  [#](#coca-norv)paper   |                        | literature[#](#norv-twit) |   infer[#](#norv-wiki)    |  ibid[#](#norv-goog)  | scientific[#](#norv-subt) |
+| **twit** |  [#](#coca-twit)vulgar  | [#](#norv-twit)playful |                           |    life[#](#twit-wiki)    | buzzy[#](#twit-goog)  |    news[#](#twit-subt)    |
+| **wiki** | [#](#coca-wiki)document |  [#](#norv-wiki)event  |    [#](#twit-wiki)note    |                           | story[#](#wiki-goog)  |    fact[#](#wiki-subt)    |
+| **goog** |   [#](#coca-goog)web    |  [#](#norv-goog)info   |    [#](#twit-goog)site    |    [#](#wiki-goog)sale    |                       |    file[#](#goog-subt)    |
+| **subt** |   [#](#coca-subt)tell   |  [#](#norv-subt)call   |   [#](#twit-subt)drama    |  [#](#wiki-subt)feeling   | [#](#goog-subt)chatty |                           |
 
 ---
 
